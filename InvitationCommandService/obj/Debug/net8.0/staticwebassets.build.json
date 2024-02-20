@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BMxHO3xhG6tDyaj+DWtdJITAQZrBzpol/fipBBi9sBQ=",
+  "Source": "InvitationCommandService",
+  "BasePath": "_content/InvitationCommandService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

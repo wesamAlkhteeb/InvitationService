@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option csharp_namespace = "InvitationCommandService";
+
+package demo_invitation;
+
+service Invitation {
+	rpc SendInvitationToMember(InvitationRequest) returns (Response);
+	rpc Accept(InvitationInfo) returns (Response);
+	rpc Cancel(InvitationInfo) returns (Response);
+	rpc Reject(InvitationInfo) returns (Response);
+	rpc JoinMemberByAdmin(InvitationRequest) returns (Response);
+	rpc RemoveMember(InvitationInfo) returns (Response);
+	rpc LeaveMember(InvitationInfo) returns (Response);
+	rpc ChangePermissions(InvitationRequest) returns (Response);
+}
+
+
+message InvitationRequest{
+	InvitationInfo invitationInfo = 1;
+	repeated Permissions Permissions = 2;
+}
+
+message ChangePermissionsRequest{
+	InvitationInfo invitationInfo = 1;
+	repeated Permissions Permissions = 2;
+}
+
+message Permissions{
+	int32 id = 1;
+	string name = 2; 
+}
+
+message InvitationInfo{
+	int32 accountId = 1;
+	string subscriptionId = 2;
+	string UserId = 3;
+	string MemberId = 4;
+}
+
+message Response {
+	int32 id = 1;
+	string message =2;
+}
