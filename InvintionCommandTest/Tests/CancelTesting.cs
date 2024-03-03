@@ -1,4 +1,5 @@
-﻿using InvintionCommandTest.Helper;
+﻿using Grpc.Core;
+using InvintionCommandTest.Helper;
 using InvitationCommandTest;
 using Microsoft.AspNetCore.Mvc.Testing;
 using System;
@@ -60,8 +61,10 @@ namespace InvintionCommandTest.Tests
                 MemberId = 3,
                 SubscriptionId = 91
             };
-            var response = await client.CancelAsync(invitationInfo);
-            Assert.NotNull(response);
+            await Assert.ThrowsAsync<RpcException>(async () =>
+            {
+                await client.CancelAsync(invitationInfo);
+            });
         }
     }
 }

@@ -61,7 +61,7 @@ namespace InvintionCommandTest.Tests
                 AccountId = 2,
                 UserId = 2,
                 MemberId = 3,
-                SubscriptionId = 91
+                SubscriptionId = 1
             };
             invitationRequest.Permissions.Add(new Permissions
             {
@@ -74,8 +74,10 @@ namespace InvintionCommandTest.Tests
                 Name = "PurchaseCards"
             });
             await client.SendInvitationToMemberAsync(invitationRequest);
-            await client.RejectAsync(invitationRequest.InvitationInfo);
-            var response = await client.SendInvitationToMemberAsync(invitationRequest);
+            await client.AcceptAsync(invitationRequest.InvitationInfo);
+            await client.LeaveMemberAsync(invitationRequest.InvitationInfo);
+            
+            var response = await client.JoinMemberByAdminAsync(invitationRequest);
             Assert.NotNull(response);
         } 
         [Fact] 
@@ -88,7 +90,7 @@ namespace InvintionCommandTest.Tests
                 AccountId = 2,
                 UserId = 2,
                 MemberId = 3,
-                SubscriptionId = 91
+                SubscriptionId = 1
             };
             invitationRequest.Permissions.Add(new Permissions
             {
@@ -119,7 +121,7 @@ namespace InvintionCommandTest.Tests
                 AccountId = 2,
                 UserId = 2,
                 MemberId = 3,
-                SubscriptionId = 91
+                SubscriptionId = 1
             };
             invitationRequest.Permissions.Add(new Permissions
             {
@@ -137,7 +139,5 @@ namespace InvintionCommandTest.Tests
                 await client.SendInvitationToMemberAsync(invitationRequest);
             });
         }
-
-
     }
 }

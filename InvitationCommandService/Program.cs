@@ -1,13 +1,32 @@
-using InvitationCommandService.Infrastructure;
+using InvitationCommandService.Application.Abstraction;
+using InvitationCommandService.Application.CommandHandler.Send;
+using InvitationCommandService.Application.ServiceBus;
+using InvitationCommandService.Database;
+using InvitationCommandService.Infrastructure.Repository;
+using InvitationCommandService.Infrastructure.ServiceBus;
+using InvitationCommandService.Presentation.Interceptors;
 using InvitationCommandService.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddGrpc();
+builder.Services.AddGrpc(option =>{
+    option.Interceptors.Add<HandleErrorInterceptor>();
+});
+var azureOptions =builder.Configuration.GetSection("Azure").Get<AzureOptions>();
 
-builder.Services.AddDbContext<InvitationDbContext>(options => options.UseSqlServer(""));
+builder.Services.AddSingleton<AzureOptions>(azureOptions!);
+
+builder.Services.AddMediatR(x => x.RegisterServicesFromAssembly(typeof(SendInvitationCommandHandler).Assembly));
+
+builder.Services.AddDbContext<InvitationDbContext>(
+    options => options.UseSqlServer("")
+    );
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+builder.Services.AddSingleton<ServiceBusPublisher>();
+builder.Services.AddScoped<IServiceBusRepository, ServiceBusRepository>();
+
 
 var app = builder.Build();
 

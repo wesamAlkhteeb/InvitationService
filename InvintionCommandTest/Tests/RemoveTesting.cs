@@ -16,6 +16,7 @@ namespace InvintionCommandTest.Tests
             _factory = factory.WithDefaultConfigurations(helper, services =>
             {
                 services.ReplaceWithInMemoryDatabase();
+                
             });
         }
 
@@ -27,7 +28,7 @@ namespace InvintionCommandTest.Tests
             {
                 AccountId = 2,
                 UserId = 2,
-                MemberId = 3,
+                MemberId = 5,
                 SubscriptionId = 91
             };
             invitationRequest.Permissions.Add(new Permissions
@@ -42,10 +43,8 @@ namespace InvintionCommandTest.Tests
             });
             await client.SendInvitationToMemberAsync(invitationRequest);
             await client.AcceptAsync(invitationRequest.InvitationInfo);
-            await Assert.ThrowsAsync<RpcException>(async () =>
-            {
-                await client.RemoveMemberAsync(invitationRequest.InvitationInfo);
-            });
+            var response = await client.RemoveMemberAsync(invitationRequest.InvitationInfo);
+            Assert.NotNull(response);
         }
 
         [Fact] 

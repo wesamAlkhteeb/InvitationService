@@ -50,7 +50,7 @@ namespace InvitationCommandService {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::InvitationCommandService.Response> __Marshaller_demo_invitation_Response = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationCommandService.Response.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationCommandService.InvitationInfo> __Marshaller_demo_invitation_InvitationInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationCommandService.InvitationInfo.Parser));
+    static readonly grpc::Marshaller<global::InvitationCommandService.InvitationInfoRequest> __Marshaller_demo_invitation_InvitationInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationCommandService.InvitationInfoRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::InvitationCommandService.InvitationRequest, global::InvitationCommandService.Response> __Method_SendInvitationToMember = new grpc::Method<global::InvitationCommandService.InvitationRequest, global::InvitationCommandService.Response>(
@@ -61,27 +61,27 @@ namespace InvitationCommandService {
         __Marshaller_demo_invitation_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response> __Method_Accept = new grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(
+    static readonly grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response> __Method_Accept = new grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Accept",
-        __Marshaller_demo_invitation_InvitationInfo,
+        __Marshaller_demo_invitation_InvitationInfoRequest,
         __Marshaller_demo_invitation_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response> __Method_Cancel = new grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(
+    static readonly grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response> __Method_Cancel = new grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Cancel",
-        __Marshaller_demo_invitation_InvitationInfo,
+        __Marshaller_demo_invitation_InvitationInfoRequest,
         __Marshaller_demo_invitation_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response> __Method_Reject = new grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(
+    static readonly grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response> __Method_Reject = new grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Reject",
-        __Marshaller_demo_invitation_InvitationInfo,
+        __Marshaller_demo_invitation_InvitationInfoRequest,
         __Marshaller_demo_invitation_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -93,19 +93,19 @@ namespace InvitationCommandService {
         __Marshaller_demo_invitation_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response> __Method_RemoveMember = new grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(
+    static readonly grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response> __Method_RemoveMember = new grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RemoveMember",
-        __Marshaller_demo_invitation_InvitationInfo,
+        __Marshaller_demo_invitation_InvitationInfoRequest,
         __Marshaller_demo_invitation_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response> __Method_LeaveMember = new grpc::Method<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(
+    static readonly grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response> __Method_LeaveMember = new grpc::Method<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(
         grpc::MethodType.Unary,
         __ServiceName,
         "LeaveMember",
-        __Marshaller_demo_invitation_InvitationInfo,
+        __Marshaller_demo_invitation_InvitationInfoRequest,
         __Marshaller_demo_invitation_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -133,19 +133,19 @@ namespace InvitationCommandService {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> Accept(global::InvitationCommandService.InvitationInfo request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> Accept(global::InvitationCommandService.InvitationInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> Cancel(global::InvitationCommandService.InvitationInfo request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> Cancel(global::InvitationCommandService.InvitationInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> Reject(global::InvitationCommandService.InvitationInfo request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> Reject(global::InvitationCommandService.InvitationInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -157,13 +157,13 @@ namespace InvitationCommandService {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> RemoveMember(global::InvitationCommandService.InvitationInfo request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> RemoveMember(global::InvitationCommandService.InvitationInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> LeaveMember(global::InvitationCommandService.InvitationInfo request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationCommandService.Response> LeaveMember(global::InvitationCommandService.InvitationInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -200,12 +200,12 @@ namespace InvitationCommandService {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, InvitationBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_SendInvitationToMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationRequest, global::InvitationCommandService.Response>(serviceImpl.SendInvitationToMember));
-      serviceBinder.AddMethod(__Method_Accept, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(serviceImpl.Accept));
-      serviceBinder.AddMethod(__Method_Cancel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(serviceImpl.Cancel));
-      serviceBinder.AddMethod(__Method_Reject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(serviceImpl.Reject));
+      serviceBinder.AddMethod(__Method_Accept, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(serviceImpl.Accept));
+      serviceBinder.AddMethod(__Method_Cancel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(serviceImpl.Cancel));
+      serviceBinder.AddMethod(__Method_Reject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(serviceImpl.Reject));
       serviceBinder.AddMethod(__Method_JoinMemberByAdmin, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationRequest, global::InvitationCommandService.Response>(serviceImpl.JoinMemberByAdmin));
-      serviceBinder.AddMethod(__Method_RemoveMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(serviceImpl.RemoveMember));
-      serviceBinder.AddMethod(__Method_LeaveMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfo, global::InvitationCommandService.Response>(serviceImpl.LeaveMember));
+      serviceBinder.AddMethod(__Method_RemoveMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(serviceImpl.RemoveMember));
+      serviceBinder.AddMethod(__Method_LeaveMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationInfoRequest, global::InvitationCommandService.Response>(serviceImpl.LeaveMember));
       serviceBinder.AddMethod(__Method_ChangePermissions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationCommandService.InvitationRequest, global::InvitationCommandService.Response>(serviceImpl.ChangePermissions));
     }
 

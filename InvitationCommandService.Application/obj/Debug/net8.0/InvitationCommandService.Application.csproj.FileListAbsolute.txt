@@ -1,0 +1,16 @@
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.csproj.AssemblyReference.cache
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.AssemblyInfoInputs.cache
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.AssemblyInfo.cs
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.csproj.CoreCompileInputs.cache
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.sourcelink.json
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\bin\Debug\net8.0\InvitationCommandService.Application.deps.json
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\bin\Debug\net8.0\InvitationCommandService.Application.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\bin\Debug\net8.0\InvitationCommandService.Application.pdb
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\bin\Debug\net8.0\InvitationCommandService.Domain.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\bin\Debug\net8.0\InvitationCommandService.Domain.pdb
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\refint\InvitationCommandService.Application.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\InvitationCommandService.Application.pdb
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\ref\InvitationCommandService.Application.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService.Application\obj\Debug\net8.0\Invitati.19053A80.Up2Date

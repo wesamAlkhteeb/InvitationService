@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvintionCommandTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fd3e214db183fc00bb2797924c70e7cd7cf5ad0")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvintionCommandTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvintionCommandTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "BMxHO3xhG6tDyaj+DWtdJITAQZrBzpol/fipBBi9sBQ=",
-  "Source": "InvitationCommandService",
-  "BasePath": "_content/InvitationCommandService",
+  "Hash": "On3JdCcdrW5fIdAtFLyspMPMkAa+39AuvKiDFE1srDc=",
+  "Source": "InvitationCommandService.Presentation",
+  "BasePath": "_content/InvitationCommandService.Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

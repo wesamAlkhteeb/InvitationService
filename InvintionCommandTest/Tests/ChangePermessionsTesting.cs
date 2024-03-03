@@ -1,4 +1,5 @@
-﻿using InvintionCommandTest.Helper;
+﻿using Grpc.Core;
+using InvintionCommandTest.Helper;
 using InvitationCommandTest;
 using Microsoft.AspNetCore.Mvc.Testing;
 using System;
@@ -71,8 +72,10 @@ namespace InvintionCommandTest.Tests
                 Id = 2,
                 Name = "PurchaseCards"
             });
-            var response = await client.ChangePermissionsAsync(invitationRequest);
-            Assert.NotNull(response);
+            await Assert.ThrowsAsync<RpcException>(async () =>
+            {
+                await client.ChangePermissionsAsync(invitationRequest);
+            });
         }
     }
 }

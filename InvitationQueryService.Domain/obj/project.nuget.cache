@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qURR92exwD5N2OnImh7CC464NryfP/Y8WBkfDKqh95nWJ4GAPMw4D9SuzwzTv+mPbbRYo8P3MTKkRtDSMpN4dg==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wesam\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

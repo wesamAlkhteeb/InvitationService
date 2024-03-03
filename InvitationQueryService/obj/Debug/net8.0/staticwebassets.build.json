@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8W+VBXn8UCI5Qr859+dLShjg2ncVUu2QxTEyf+dYN6Q=",
+  "Source": "InvitationQueryService.Presentation",
+  "BasePath": "_content/InvitationQueryService.Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

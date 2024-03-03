@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj": {}
+    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj": {
+    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj",
+        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj",
         "projectName": "InvintionCommandTest",
-        "projectPath": "C:\\Projects\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj",
+        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj",
         "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\DemoInvitation\\InvintionCommandTest\\obj\\",
+        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvintionCommandTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projects\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.csproj": {
-                "projectPath": "C:\\Projects\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.csproj"
+              "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.Presentation.csproj": {
+                "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.Presentation.csproj"
               }
             }
           }
@@ -42,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -101,18 +106,92 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.csproj": {
+    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.csproj",
-        "projectName": "InvitationCommandService",
-        "projectPath": "C:\\Projects\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.csproj",
+        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj",
+        "projectName": "InvitationCommandService.Application",
+        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj",
         "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\DemoInvitation\\InvitationCommandService\\obj\\",
+        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wesam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj",
+        "projectName": "InvitationCommandService.Domain",
+        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj",
+        "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -139,15 +218,88 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
+        "projectName": "InvitationCommandService.Infrastructure",
+        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wesam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj": {
+                "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Grpc.AspNetCore": {
+            "Azure.Messaging.ServiceBus": {
               "target": "Package",
-              "version": "[2.57.0, )"
+              "version": "[7.17.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -170,6 +322,91 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.Presentation.csproj",
+        "projectName": "InvitationCommandService.Presentation",
+        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService\\InvitationCommandService.Presentation.csproj",
+        "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wesam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj": {
+                "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj"
+              },
+              "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj": {
+                "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.60.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
@@ -177,7 +414,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

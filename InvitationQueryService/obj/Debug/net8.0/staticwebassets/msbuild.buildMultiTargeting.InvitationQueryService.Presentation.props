@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\InvitationQueryService.Presentation.props" />
+</Project>

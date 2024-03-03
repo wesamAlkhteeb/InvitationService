@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InvitationCommandService\InvitationCommandService.csproj" />
+    <ProjectReference Include="..\InvitationCommandService\InvitationCommandService.Presentation.csproj" />
   </ItemGroup>
 
 	<ItemGroup>
