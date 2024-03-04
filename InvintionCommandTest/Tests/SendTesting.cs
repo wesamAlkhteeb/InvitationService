@@ -1,18 +1,16 @@
-﻿using Google.Protobuf.Collections;
-using Grpc.Core;
+﻿using Grpc.Core;
 using InvintionCommandTest.Helper;
 using InvitationCommandTest;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit.Abstractions;
 
 namespace InvintionCommandTest.Tests
 {
-    public class SendTesting:IClassFixture<WebApplicationFactory<Program>>
+    public class SendTesting : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly WebApplicationFactory<Program> _factory;
 
-        public SendTesting(WebApplicationFactory<Program> factory,ITestOutputHelper helper)
+        public SendTesting(WebApplicationFactory<Program> factory, ITestOutputHelper helper)
         {
             _factory = factory.WithDefaultConfigurations(helper, services =>
             {
@@ -20,8 +18,9 @@ namespace InvintionCommandTest.Tests
             });
         }
 
-        [Fact] 
-        public async Task SendNewInvitation_FirstTime_Successfully(){
+        [Fact]
+        public async Task SendNewInvitation_FirstTime_Successfully()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -44,13 +43,13 @@ namespace InvintionCommandTest.Tests
             });
 
             var response = await client.SendInvitationToMemberAsync(invitationRequest);
-            
+
             Assert.NotNull(response);
-        } 
+        }
 
 
         // Joined  => exited => send 
-        [Fact] 
+        [Fact]
         public async Task SendNewInvitation_MemberWasJoinedAndNeedToRejoinAfterExit_Successfully()
         {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
@@ -76,12 +75,13 @@ namespace InvintionCommandTest.Tests
             await client.SendInvitationToMemberAsync(invitationRequest);
             await client.AcceptAsync(invitationRequest.InvitationInfo);
             await client.LeaveMemberAsync(invitationRequest.InvitationInfo);
-            
+
             var response = await client.JoinMemberByAdminAsync(invitationRequest);
             Assert.NotNull(response);
-        } 
-        [Fact] 
-        public async Task SendNewInvitation_AlreadyExists_Exception(){
+        }
+        [Fact]
+        public async Task SendNewInvitation_AlreadyExists_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -109,10 +109,11 @@ namespace InvintionCommandTest.Tests
                 await client.SendInvitationToMemberAsync(invitationRequest);
             });
         }
-        
+
         // send invite and then need some time to response memper (accept | reject)
-        [Fact] 
-        public async Task SendNewInvitation_Pinding_Exception(){
+        [Fact]
+        public async Task SendNewInvitation_Pinding_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();

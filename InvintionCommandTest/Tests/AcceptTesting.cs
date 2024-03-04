@@ -19,8 +19,9 @@ namespace InvintionCommandTest.Tests
             });
         }
 
-        [Fact] 
-        public async Task AcceptInvitation_Found_Successfully() {
+        [Fact]
+        public async Task AcceptInvitation_Found_Successfully()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -45,8 +46,9 @@ namespace InvintionCommandTest.Tests
             var response = await client.AcceptAsync(invitationRequest.InvitationInfo);
             Assert.NotNull(response);
         }
-        [Fact] 
-        public async Task AccceptInvitation_Notfound_Exception() {
+        [Fact]
+        public async Task AccceptInvitation_Notfound_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
             InvitationInfoRequest invitationInfo = new InvitationInfoRequest()
             {
@@ -55,7 +57,7 @@ namespace InvintionCommandTest.Tests
                 MemberId = 3,
                 SubscriptionId = 91
             };
-            
+
             await Assert.ThrowsAsync<RpcException>(async () =>
             {
                 await client.AcceptAsync(invitationInfo);

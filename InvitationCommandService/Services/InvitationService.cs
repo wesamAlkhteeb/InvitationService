@@ -1,5 +1,4 @@
 using Grpc.Core;
-using InvitationCommandService.Application.CommandHandler;
 using InvitationCommandService.Application.CommandHandler.Accept;
 using InvitationCommandService.Application.CommandHandler.Cancel;
 using InvitationCommandService.Application.CommandHandler.ChangePermissions;
@@ -13,7 +12,7 @@ using MediatR;
 
 namespace InvitationCommandService.Services
 {
-    public class InvitationService:Invitation.InvitationBase
+    public class InvitationService : Invitation.InvitationBase
     {
         private readonly IMediator mediator;
 
@@ -24,7 +23,7 @@ namespace InvitationCommandService.Services
 
         public override async Task<Response> SendInvitationToMember(InvitationRequest request, ServerCallContext context)
         {
-            SendInvitationCommand sendInvitation = await request.ConvertTOSendInvitationCommand(); 
+            SendInvitationCommand sendInvitation = await request.ConvertTOSendInvitationCommand();
             int id = await mediator.Send(sendInvitation);
             return new Response
             {

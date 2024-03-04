@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+option csharp_namespace = "InvitationQueryTest";
+
+package Permissions.v1;
+
+service Permissions{
+  rpc GetAll(PermissionPage) returns (ManyPermission);
+  rpc Add(AddPermisson) returns (Response);
+  rpc Update(UpdatePermission) returns (Response);
+  rpc Delete(DeletePermission) returns (Response);	
+  rpc Check(PermissionId) returns (Response);
+}
+
+
+message PermissionId{
+	int32 id = 1;
+}
+
+message Response {
+	int32 id = 1;
+	string message =2;
+}
+
+message Permission{
+	int32 id = 1;
+	string name = 2; 
+}
+
+message PermissionPage {
+	int32 numberPage = 1;
+}
+
+message ManyPermission{
+	repeated Permission Permission = 1;
+}
+
+message AddPermisson{
+	string name = 1;
+}
+
+message UpdatePermission{
+	int32 id = 1;
+	string name = 2;
+}
+
+message DeletePermission{
+	int32 id = 1;
+}

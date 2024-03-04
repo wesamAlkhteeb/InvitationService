@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using InvitationCommandService.Application.CommandHandler;
 using InvitationCommandService.Application.CommandHandler.Accept;
 using InvitationCommandService.Application.CommandHandler.Cancel;
 using InvitationCommandService.Application.CommandHandler.ChangePermissions;
@@ -11,8 +10,6 @@ using InvitationCommandService.Application.CommandHandler.Remove;
 using InvitationCommandService.Application.CommandHandler.Send;
 using InvitationCommandService.Domain.Model;
 using InvitationCommandService.Presentation.Validation;
-using Microsoft.Identity.Client;
-using System.Threading.Channels;
 
 
 namespace InvitationCommandService.Presentation.DTOExtension
@@ -29,7 +26,7 @@ namespace InvitationCommandService.Presentation.DTOExtension
                 subscriptionId: invitation.InvitationInfo.SubscriptionId,
                 Permissions: new List<PermissionsModel>()
                 );
-            for(int i=0; i< invitation.Permissions.Count(); i++)
+            for (int i = 0; i < invitation.Permissions.Count(); i++)
             {
                 sendInvitation.Permissions.Add(new PermissionsModel
                 {

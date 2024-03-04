@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using InvitationCommandService.Domain.Entities.Events;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Text.Json;
-using InvitationCommandService.Domain.Entities.Events;
+using System.Text.Json.Serialization;
 
 namespace InvitationCommandService.Infrastructure.Configuration
 {

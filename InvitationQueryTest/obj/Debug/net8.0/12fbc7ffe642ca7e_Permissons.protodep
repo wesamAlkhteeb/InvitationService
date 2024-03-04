@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Permissons.cs \
+obj\Debug\net8.0\Protos/PermissonsGrpc.cs: Protos/Permissons.proto

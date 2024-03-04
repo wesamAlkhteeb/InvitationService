@@ -18,8 +18,9 @@ namespace InvintionCommandTest.Tests
             });
         }
 
-        [Fact] 
-        public async Task Leave_MemberIsAlreadyJoined_Successfully() {
+        [Fact]
+        public async Task Leave_MemberIsAlreadyJoined_Successfully()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -28,7 +29,7 @@ namespace InvintionCommandTest.Tests
                 AccountId = 2,
                 UserId = 2,
                 MemberId = 3,
-                SubscriptionId = 91
+                SubscriptionId = 1
             };
             invitationRequest.Permissions.Add(new Permissions
             {
@@ -45,12 +46,13 @@ namespace InvintionCommandTest.Tests
             var response = await client.LeaveMemberAsync(invitationRequest.InvitationInfo);
             Assert.NotNull(response);
         }
-        
-        [Fact] 
-        public async Task Leave_MemberIsNotJoined_Exception() {
+
+        [Fact]
+        public async Task Leave_MemberIsNotJoined_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
-            
+
             InvitationInfoRequest invitationInfo = new InvitationInfoRequest()
             {
                 AccountId = 2,

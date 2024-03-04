@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvitationQueryService.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fd3e214db183fc00bb2797924c70e7cd7cf5ad0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02888b8494e0b973099140f7f2dad42d3d11c01a")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvitationQueryService.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvitationQueryService.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

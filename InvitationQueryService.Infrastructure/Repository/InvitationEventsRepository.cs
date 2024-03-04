@@ -1,12 +1,12 @@
 ﻿using InvitationQueryService.Application.Abstractions;
-using InvitationQueryService.Application.QuerySide.Accept;
-using InvitationQueryService.Application.QuerySide.Cancel;
-using InvitationQueryService.Application.QuerySide.ChangePermission;
-using InvitationQueryService.Application.QuerySide.Join;
-using InvitationQueryService.Application.QuerySide.Leave;
-using InvitationQueryService.Application.QuerySide.Reject;
-using InvitationQueryService.Application.QuerySide.Remove;
-using InvitationQueryService.Application.QuerySide.Send;
+using InvitationQueryService.Application.QuerySideServiceBus.Accept;
+using InvitationQueryService.Application.QuerySideServiceBus.Cancel;
+using InvitationQueryService.Application.QuerySideServiceBus.ChangePermission;
+using InvitationQueryService.Application.QuerySideServiceBus.Join;
+using InvitationQueryService.Application.QuerySideServiceBus.Leave;
+using InvitationQueryService.Application.QuerySideServiceBus.Reject;
+using InvitationQueryService.Application.QuerySideServiceBus.Remove;
+using InvitationQueryService.Application.QuerySideServiceBus.Send;
 using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Exceptions;
@@ -36,13 +36,20 @@ namespace InvitationQueryService.Infrastructure.Repository
             }
             else
             {
-                await database.Subscriptors.AddAsync(new SubscriptorEntity
+                SubscriptorEntity subscriptorEntity = new SubscriptorEntity
                 {
                     Sequence = sendInvitationQuery.Sequence,
                     Status = InvitationState.Pending.ToString(),
                     SubscriptionId = sendInvitationQuery.Data.Info.SubscriptionId,
                     SubscriptorAccountId = sendInvitationQuery.Data.Info.MemberId
-                });
+                };
+                await database.Subscriptors.AddAsync(subscriptorEntity);
+                await database.SaveChangesAsync();
+                AddPermissionsForSubscriptor(
+                    sendInvitationQuery.Data.Permissions,
+                    sendInvitationQuery.Data.Info.SubscriptionId,
+                    subscriptorEntity.Id
+                    );
                 await database.SaveChangesAsync();
             }
         }
@@ -95,23 +102,15 @@ namespace InvitationQueryService.Infrastructure.Repository
                     .Where(
                         x =>
                             x.SubscriptionId == changePermissionsInvitationQuery.Data.Info.SubscriptionId &&
-                            x.SubscriptorId == changePermissionsInvitationQuery.Data.Info.MemberId
+                            x.SubscriptorId == subscriptor.Id
                             ).ToListAsync();
-                foreach (var permission in changePermissionsInvitationQuery.Data.Permissions) {
-                    SubscriptorPermissionsEntity? permissionEntity = permissionsEntity
-                        .Where(x => x.PermissionId == permission.Id).FirstOrDefault();
-                    if(permissionEntity is null)
-                    {
-                        await database.SubscriptionPermissions
-                            .AddAsync(new SubscriptorPermissionsEntity
-                            {
-                                PermissionId = permission.Id,
-                                SubscriptorId = subscriptor.Id,
-                                SubscriptionId = changePermissionsInvitationQuery.Data.Info.SubscriptionId
-                            });
-                    }
-                }
+                database.RemoveRange(permissionsEntity);
                 subscriptor.Sequence = changePermissionsInvitationQuery.Sequence;
+                AddPermissionsForSubscriptor(
+                    changePermissionsInvitationQuery.Data.Permissions,
+                    changePermissionsInvitationQuery.Data.Info.SubscriptionId,
+                    subscriptor.Id
+                    );
                 await database.SaveChangesAsync();
             }
         }
@@ -120,8 +119,8 @@ namespace InvitationQueryService.Infrastructure.Repository
         {
             return await database.Subscriptors
                 .Where(x => x.SubscriptorAccountId == subscriptorAccountId && x.SubscriptionId == subscriptionId)
-                .Select(x=>x.Sequence).FirstOrDefaultAsync();
-            
+                .Select(x => x.Sequence).FirstOrDefaultAsync();
+
         }
 
         public async Task JoinInvitation(JoinInvitationQuery joinInvitationQuery)
@@ -135,13 +134,20 @@ namespace InvitationQueryService.Infrastructure.Repository
             }
             else
             {
-                await database.Subscriptors.AddAsync(new SubscriptorEntity
+                SubscriptorEntity subscriptorEntity = new SubscriptorEntity
                 {
                     Sequence = joinInvitationQuery.Sequence,
                     Status = InvitationState.Joined.ToString(),
                     SubscriptionId = joinInvitationQuery.Data.Info.SubscriptionId,
                     SubscriptorAccountId = joinInvitationQuery.Data.Info.MemberId
-                });
+                };
+                await database.Subscriptors.AddAsync(subscriptorEntity);
+                await database.SaveChangesAsync();
+                AddPermissionsForSubscriptor(
+                    joinInvitationQuery.Data.Permissions,
+                    joinInvitationQuery.Data.Info.SubscriptionId,
+                    subscriptorEntity.Id
+                    );
                 await database.SaveChangesAsync();
             }
         }
@@ -194,13 +200,26 @@ namespace InvitationQueryService.Infrastructure.Repository
             }
         }
 
-        
+
         private async Task<SubscriptorEntity?> GetSubscriptor(int subscriptorAccountId, int subscriptionId)
         {
             return await database.Subscriptors
                 .Where(x => x.SubscriptorAccountId == subscriptorAccountId
                             && x.SubscriptionId == subscriptionId)
                 .FirstOrDefaultAsync();
+        }
+
+        private void AddPermissionsForSubscriptor(List<PermissionModel> permissions, int subscriptionId, int subscriptorId)
+        {
+            foreach (var permission in permissions)
+            {
+                database.SubscriptionPermissions.Add(new SubscriptorPermissionsEntity
+                {
+                    PermissionId = permission.Id,
+                    SubscriptionId = subscriptionId,
+                    SubscriptorId = subscriptorId,
+                });
+            }
         }
     }
 }

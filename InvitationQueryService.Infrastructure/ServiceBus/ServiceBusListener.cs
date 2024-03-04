@@ -1,19 +1,19 @@
 ﻿using Azure.Messaging.ServiceBus;
+using InvitationQueryService.Application.QuerySideServiceBus.Accept;
+using InvitationQueryService.Application.QuerySideServiceBus.Cancel;
+using InvitationQueryService.Application.QuerySideServiceBus.ChangePermission;
+using InvitationQueryService.Application.QuerySideServiceBus.Join;
+using InvitationQueryService.Application.QuerySideServiceBus.Leave;
+using InvitationQueryService.Application.QuerySideServiceBus.Reject;
+using InvitationQueryService.Application.QuerySideServiceBus.Remove;
+using InvitationQueryService.Application.QuerySideServiceBus.Send;
 using InvitationQueryService.Infrastructure.ServiceBus;
-using Microsoft.Extensions.Hosting;
-using System.Text;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using InvitationQueryService.Application.QuerySide.Send;
-using InvitationQueryService.Application.QuerySide.ChangePermission;
-using InvitationQueryService.Application.QuerySide.Join;
-using InvitationQueryService.Application.QuerySide.Cancel;
-using InvitationQueryService.Application.QuerySide.Reject;
-using InvitationQueryService.Application.QuerySide.Remove;
-using InvitationQueryService.Application.QuerySide.Leave;
-using InvitationQueryService.Application.QuerySide.Accept;
+using System.Text;
 
 namespace InvitationCommandService.Application.ServiceBus
 {
@@ -41,7 +41,7 @@ namespace InvitationCommandService.Application.ServiceBus
                 });
             _processor.ProcessMessageAsync += Processor_ProcessMessageAsync;
             _processor.ProcessErrorAsync += Processor_ProcessErrorAsync;
-            
+
             _deadLetterProcessor = _client.CreateProcessor(
                 topicName: azure.TopicName,
                 subscriptionName: azure.SubscriptionName,
@@ -80,27 +80,36 @@ namespace InvitationCommandService.Application.ServiceBus
 
         private async Task Processor_ProcessMessageAsync(ProcessSessionMessageEventArgs args)
         {
+            //await args.CompleteMessageAsync(args.Message);
+            //return ;
             var json = Encoding.UTF8.GetString(args.Message.Body);
-            bool isHandled = await HandleMessage(json,args.Message.Subject);
+            try
+            {
+                bool isHandled = await HandleMessage(json, args.Message.Subject);
 
-            if (isHandled)
-            {
-                await args.CompleteMessageAsync(args.Message);
+                if (isHandled)
+                {
+                    await args.CompleteMessageAsync(args.Message);
+                }
+                else
+                {
+                    logger.LogWarning("Message {MessageId} not handled", args.Message.MessageId);
+                    await Task.Delay(5000);
+                    await args.AbandonMessageAsync(args.Message);
+                }
             }
-            else
+            catch (Exception e)
             {
-                logger.LogWarning("Message {MessageId} not handled", args.Message.MessageId);
-                await Task.Delay(5000);
-                await args.AbandonMessageAsync(args.Message);
+                logger.LogError("Error : {e}", e);
             }
         }
 
         private async Task<bool> HandleMessage(string message, string subject)
         {
-            
+
             using var scope = _serviceProvider.CreateScope();
             var mediator = scope.ServiceProvider.GetRequiredService<IMediator>();
-            
+
             switch (subject)
             {
                 case "SendEvent":
@@ -108,7 +117,7 @@ namespace InvitationCommandService.Application.ServiceBus
                         SendInvitationQuery sendInvitation = JsonConvert.DeserializeObject<SendInvitationQuery>(message)!;
                         return await mediator.Send(sendInvitation);
                     }
-                case "ChangepermissionEvent":
+                case "ChangePermissionEvent":
                     {
                         ChangePermissionsInvitationQuery permissionsInvitationQuery = JsonConvert.DeserializeObject<ChangePermissionsInvitationQuery>(message)!;
                         return await mediator.Send(permissionsInvitationQuery);

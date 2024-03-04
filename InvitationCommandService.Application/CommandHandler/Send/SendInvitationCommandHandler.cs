@@ -1,15 +1,9 @@
 ﻿using InvitationCommandService.Application.Abstraction;
-using InvitationCommandService.Domain;
 using InvitationCommandService.Domain.Domain;
 using InvitationCommandService.Domain.Entities.Data;
 using InvitationCommandService.Domain.Entities.Events;
 using InvitationCommandService.Domain.StateInvitation;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InvitationCommandService.Application.CommandHandler.Send
 {
@@ -43,7 +37,7 @@ namespace InvitationCommandService.Application.CommandHandler.Send
                 }
             };
             await eventRepository.AddEvent(@event);
-            
+
             await serviceBus.PublicMessage();
             return @event.Id;
         }

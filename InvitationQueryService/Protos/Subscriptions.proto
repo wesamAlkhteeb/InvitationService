@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option csharp_namespace = "InvitationQueryService";
+
+package Subscriptions.v1;
+
+
+service Subscriptions{
+  rpc GetAllSubscriptorInSubscription(SubscriptionPage ) returns (ManySubscrptor);
+  rpc GetAllSubscriptionForSubscriptor(SubscriptionPage ) returns (ManySubscrption);
+  rpc GetStatusSbuscriptorInSbuscription(Status) returns (StatusResult);
+  rpc GetAllSubscriptionForOwner(SubscriptionPage ) returns (ManySubscrption);
+}
+
+
+message SubscriptionPage {
+	int32 numberPage = 1;
+}
+message ManySubscrptor{
+	repeated int32 id =1;
+}
+
+
+
+message ManySubscrption{
+	repeated int32  id =1;
+}
+
+message Status {
+	int32 Userid = 1;
+	int32 Ownerid = 2;
+}
+
+message StatusResult{
+	string state = 1;
+}

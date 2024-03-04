@@ -29,7 +29,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvitationQueryService.Appl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvitationQueryService.Domain", "InvitationQueryService.Domain\InvitationQueryService.Domain.csproj", "{4D892F2E-8C43-4FEE-AA95-FA1E1495D197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvitationQueryTest", "InvitationQueryTest\InvitationQueryTest.csproj", "{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvitationQueryTest", "InvitationQueryTest\InvitationQueryTest.csproj", "{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DFED8396-EBB3-4D64-9471-A51B3E522984}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

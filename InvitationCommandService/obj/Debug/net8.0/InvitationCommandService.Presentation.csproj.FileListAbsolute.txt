@@ -1,10 +1,3 @@
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.AssemblyReference.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfoInputs.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfo.cs
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.CoreCompileInputs.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.MvcApplicationPartsAssemblyInfo.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.sourcelink.json
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\appsettings.Development.json
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\appsettings.json
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.exe
@@ -13,7 +6,10 @@ D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.pdb
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Core.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Core.Amqp.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Identity.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\FluentValidation.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Google.Protobuf.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
@@ -23,6 +19,7 @@ D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.Net.Common.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\MediatR.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
@@ -39,6 +36,7 @@ D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Serilog.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Drawing.Common.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
@@ -65,6 +63,13 @@ D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Application.pdb
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Infrastructure.pdb
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Domain.pdb
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.AssemblyReference.cache
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfoInputs.cache
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfo.cs
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.CoreCompileInputs.cache
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.sourcelink.json
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets.build.json
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets.development.json
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.InvitationCommandService.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
@@ -73,14 +78,9 @@ D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InvitationCommandService.Presentation.props
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\scopedcss\bundle\InvitationCommandService.Presentation.styles.css
+D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\Invitati.B63D3A13.Up2Date
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\refint\InvitationCommandService.Presentation.dll
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.pdb
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.genruntimeconfig.cache
 D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\ref\InvitationCommandService.Presentation.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\FluentValidation.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\Invitati.B63D3A13.Up2Date
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Serilog.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Core.Amqp.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll

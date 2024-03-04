@@ -25,8 +25,8 @@ namespace InvitationCommandService.Infrastructure.Repository
         public async Task<List<EventEntity>> GetEventsByAggregateId(string aggregateId)
         {
             return await database.Events
-                    .Where(@event=> @event.AggregateId == aggregateId)
-                    .OrderByDescending(@event=> @event.Sequence)
+                    .Where(@event => @event.AggregateId == aggregateId)
+                    .OrderByDescending(@event => @event.Sequence)
                     .ToListAsync();
         }
 

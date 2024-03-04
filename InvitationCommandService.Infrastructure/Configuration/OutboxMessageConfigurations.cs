@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using InvitationCommandService.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using InvitationCommandService.Domain.Entities;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace InvitationCommandService.Infrastructure.Configuration
 {

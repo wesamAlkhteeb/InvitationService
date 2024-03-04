@@ -16,11 +16,13 @@ namespace InvintionCommandTest.Tests
             _factory = factory.WithDefaultConfigurations(helper, services =>
             {
                 services.ReplaceWithInMemoryDatabase();
-                
+
             });
         }
 
-        [Fact] public async Task Remove_MemberIsAlreadyJoined_Successfully() {
+        [Fact]
+        public async Task Remove_MemberIsAlreadyJoined_Successfully()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -47,8 +49,9 @@ namespace InvintionCommandTest.Tests
             Assert.NotNull(response);
         }
 
-        [Fact] 
-        public async Task Remove_MemberIsNotJoined_Exception() {
+        [Fact]
+        public async Task Remove_MemberIsNotJoined_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
             InvitationInfoRequest invitationInfo = new InvitationInfoRequest()
             {

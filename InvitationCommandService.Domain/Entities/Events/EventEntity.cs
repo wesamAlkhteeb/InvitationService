@@ -13,7 +13,7 @@ namespace InvitationCommandService.Domain.Entities.Events
         public string? Type { get; set; }
     }
 
-    public abstract class EventEntity<T>:EventEntity
+    public abstract class EventEntity<T> : EventEntity
     {
         public required T Data { get; set; }
     }

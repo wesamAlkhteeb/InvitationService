@@ -2,11 +2,6 @@
 using InvintionCommandTest.Helper;
 using InvitationCommandTest;
 using Microsoft.AspNetCore.Mvc.Testing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit.Abstractions;
 
 namespace InvintionCommandTest.Tests
@@ -23,8 +18,9 @@ namespace InvintionCommandTest.Tests
             });
         }
 
-        [Fact] 
-        public async Task CancelInvitation_MemberIsFoundInSubscriptionButNeedToCancel_Successfully() {
+        [Fact]
+        public async Task CancelInvitation_MemberIsFoundInSubscriptionButNeedToCancel_Successfully()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -50,8 +46,9 @@ namespace InvintionCommandTest.Tests
             Assert.NotNull(response);
         }
 
-        [Fact] 
-        public async Task CancelInvitation_MemberIsNotFoundInSubscription_Exception() {
+        [Fact]
+        public async Task CancelInvitation_MemberIsNotFoundInSubscription_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationInfoRequest invitationInfo = new InvitationInfoRequest()

@@ -1,11 +1,9 @@
 ﻿using Azure.Messaging.ServiceBus;
+using InvitationCommandService.Database;
+using InvitationCommandService.Infrastructure.ServiceBus;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
-using System.Text;
-using InvitationCommandService.Database;
-using Microsoft.EntityFrameworkCore;
-using InvitationCommandService.Infrastructure.ServiceBus;
-using InvitationCommandService.Domain;
 
 namespace InvitationCommandService.Application.ServiceBus
 {
@@ -47,7 +45,7 @@ namespace InvitationCommandService.Application.ServiceBus
 
             while (true)
             {
-               
+
                 var messages = await dbContext.Outboxes
                     .Include(x => x.Event)
                     .OrderBy(x => x.Id)

@@ -1,5 +1,4 @@
 ﻿using InvitationCommandService.Application.Abstraction;
-using InvitationCommandService.Domain;
 using InvitationCommandService.Domain.Domain;
 using InvitationCommandService.Domain.Entities.Data;
 using InvitationCommandService.Domain.Entities.Events;
@@ -13,7 +12,7 @@ namespace InvitationCommandService.Application.CommandHandler.Remove
         private readonly IEventRepository eventRepository;
         private readonly IServiceBusRepository serviceBus;
 
-        public RemoveInvitationCommandHandle(IEventRepository eventRepository , IServiceBusRepository serviceBus)
+        public RemoveInvitationCommandHandle(IEventRepository eventRepository, IServiceBusRepository serviceBus)
         {
             this.eventRepository = eventRepository;
             this.serviceBus = serviceBus;

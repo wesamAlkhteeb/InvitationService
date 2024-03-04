@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F66AB148-64B6-4503-92A0-113A7BAAD348}|InvitationQueryService\\InvitationQueryService.Presentation.csproj|d:\\projects\\company\\ecom\\demoinvitation\\invitationqueryservice\\services\\subsctiptionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66AB148-64B6-4503-92A0-113A7BAAD348}|InvitationQueryService\\InvitationQueryService.Presentation.csproj|solutionrelative:invitationqueryservice\\services\\subsctiptionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}|InvitationQueryTest\\InvitationQueryTest.csproj|d:\\projects\\company\\ecom\\demoinvitation\\invitationquerytest\\protos\\subscriptions.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}|InvitationQueryTest\\InvitationQueryTest.csproj|solutionrelative:invitationquerytest\\protos\\subscriptions.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66AB148-64B6-4503-92A0-113A7BAAD348}|InvitationQueryService\\InvitationQueryService.Presentation.csproj|d:\\projects\\company\\ecom\\demoinvitation\\invitationqueryservice\\protos\\subscriptions.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F66AB148-64B6-4503-92A0-113A7BAAD348}|InvitationQueryService\\InvitationQueryService.Presentation.csproj|solutionrelative:invitationqueryservice\\protos\\subscriptions.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +22,46 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Subscriptions.proto",
+              "DocumentMoniker": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryTest\\Protos\\Subscriptions.proto",
+              "RelativeDocumentMoniker": "InvitationQueryTest\\Protos\\Subscriptions.proto",
+              "ToolTip": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryTest\\Protos\\Subscriptions.proto",
+              "RelativeToolTip": "InvitationQueryTest\\Protos\\Subscriptions.proto",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAnwBoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-03-04T08:18:34.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Subscriptions.proto",
+              "DocumentMoniker": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService\\Protos\\Subscriptions.proto",
+              "RelativeDocumentMoniker": "InvitationQueryService\\Protos\\Subscriptions.proto",
+              "ToolTip": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService\\Protos\\Subscriptions.proto",
+              "RelativeToolTip": "InvitationQueryService\\Protos\\Subscriptions.proto",
+              "ViewState": "AQIAABMAAAAAAAAAAAAnwB4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-03-04T08:09:12.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SubsctiptionsService.cs",
+              "DocumentMoniker": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService\\Services\\SubsctiptionsService.cs",
+              "RelativeDocumentMoniker": "InvitationQueryService\\Services\\SubsctiptionsService.cs",
+              "ToolTip": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService\\Services\\SubsctiptionsService.cs",
+              "RelativeToolTip": "InvitationQueryService\\Services\\SubsctiptionsService.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAcwEMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T08:08:30.245Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -2,11 +2,6 @@
 using InvintionCommandTest.Helper;
 using InvitationCommandTest;
 using Microsoft.AspNetCore.Mvc.Testing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit.Abstractions;
 
 namespace InvintionCommandTest.Tests
@@ -23,8 +18,9 @@ namespace InvintionCommandTest.Tests
             });
         }
 
-        [Fact] 
-        public async Task Join_MemberIsNotJoined_Successfully() {
+        [Fact]
+        public async Task Join_MemberIsNotJoined_Successfully()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -33,7 +29,7 @@ namespace InvintionCommandTest.Tests
                 AccountId = 2,
                 UserId = 2,
                 MemberId = 3,
-                SubscriptionId = 91
+                SubscriptionId = 1
             };
             invitationRequest.Permissions.Add(new Permissions
             {
@@ -48,8 +44,9 @@ namespace InvintionCommandTest.Tests
             var response = await client.JoinMemberByAdminAsync(invitationRequest);
             Assert.NotNull(response);
         }
-        [Fact] 
-        public async Task Join_MemberIsAlreadyJoined_Exception() {
+        [Fact]
+        public async Task Join_MemberIsAlreadyJoined_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();

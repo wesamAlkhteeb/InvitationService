@@ -11,10 +11,11 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddGrpc(option =>{
+builder.Services.AddGrpc(option =>
+{
     option.Interceptors.Add<HandleErrorInterceptor>();
 });
-var azureOptions =builder.Configuration.GetSection("Azure").Get<AzureOptions>();
+var azureOptions = builder.Configuration.GetSection("Azure").Get<AzureOptions>();
 
 builder.Services.AddSingleton<AzureOptions>(azureOptions!);
 

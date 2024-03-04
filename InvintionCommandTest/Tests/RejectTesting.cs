@@ -7,7 +7,7 @@ using Xunit.Abstractions;
 
 namespace InvintionCommandTest.Tests
 {
-    public class RejectTesting:IClassFixture<WebApplicationFactory<Program>>
+    public class RejectTesting : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly WebApplicationFactory<Program> _factory;
 
@@ -19,8 +19,9 @@ namespace InvintionCommandTest.Tests
             });
         }
 
-        [Fact] 
-        public async Task RejectInvitation_InvitationHasSended_Successfully() {
+        [Fact]
+        public async Task RejectInvitation_InvitationHasSended_Successfully()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
@@ -46,8 +47,9 @@ namespace InvintionCommandTest.Tests
             Assert.NotNull(response);
         }
 
-        [Fact] 
-        public async Task RejectInvitation_NotfoundInvitation_Exception() {
+        [Fact]
+        public async Task RejectInvitation_NotfoundInvitation_Exception()
+        {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationInfoRequest invitationInfo = new InvitationInfoRequest()
@@ -62,7 +64,7 @@ namespace InvintionCommandTest.Tests
                 await client.RejectAsync(invitationInfo);
             });
         }
-        
+
         [Fact]
         public async Task RejectInvitation_MemberIsAccepted_Exception()
         {

@@ -1,10 +1,10 @@
 using InvitationCommandService.Application.ServiceBus;
 using InvitationQueryService.Application.Abstractions;
-using InvitationQueryService.Application.QuerySide.Send;
+using InvitationQueryService.Application.QuerySideServiceBus.Send;
 using InvitationQueryService.Infrastructure.Database;
 using InvitationQueryService.Infrastructure.Repository;
 using InvitationQueryService.Infrastructure.ServiceBus;
-using InvitationQueryService.Services;
+using InvitationQueryService.Presentation.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +13,10 @@ var azureOptions = builder.Configuration.GetSection("Azure").Get<AzureOptions>()
 builder.Services.AddSingleton<AzureOptions>(azureOptions!);
 
 builder.Services.AddDbContext<InvitationDbContext>(
-    option=> option.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
+    option => option.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"))
+    //option=> option.UseInMemoryDatabase(Guid.NewGuid().ToString())
+
+    );
 builder.Services.AddScoped<IInvitationEventsRepository, InvitationEventsRepository>();
 
 builder.Services.AddHostedService<InvitationListener>();
@@ -28,7 +31,9 @@ var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
 await services.Database.EnsureCreatedAsync();
 
-app.MapGrpcService<GreeterService>();
+app.MapGrpcService<PermissionsService>();
+app.MapGrpcService<SubsctiptionsService>();
+
 app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
 
 app.Run();

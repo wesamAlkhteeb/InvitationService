@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Kg6XyFRO0uu0HOlZikRpwtCEBtxR5ZjsLk7OfFg23VoqhbHnSirJlwHp+bkZrwylAP0mm9I3QAzDH87/N+lBSQ==",
+  "dgSpecHash": "OKAhVl7YpxNuIyoKpgC37RhdMk6XW8+xm0Ghk+UBZRApDn0pxfOs54gEIyWij+Y6eTnt4ySwDGvAYoDvxFp8MQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService\\InvitationQueryService.Presentation.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\wesam\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
+    "C:\\Users\\wesam\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.2\\microsoft.entityframeworkcore.inmemory.8.0.2.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.2\\microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.2\\microsoft.entityframeworkcore.sqlserver.8.0.2.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",

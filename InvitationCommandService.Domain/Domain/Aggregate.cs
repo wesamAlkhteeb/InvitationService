@@ -1,13 +1,5 @@
-﻿using InvitationCommandService.Domain.Entities.Data;
-using InvitationCommandService.Domain.Entities.Events;
-using InvitationCommandService.Domain.Exceptions;
-using InvitationCommandService.Domain.Model;
+﻿using InvitationCommandService.Domain.Entities.Events;
 using InvitationCommandService.Domain.StateInvitation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InvitationCommandService.Domain.Domain
 {
@@ -28,14 +20,14 @@ namespace InvitationCommandService.Domain.Domain
         public static Aggregate GenerateAggregate(IStateInvitation stateInvitation, int subscribtionId, int memberId)
         {
             Aggregate aggregate = new Aggregate(stateInvitation, subscribtionId, memberId);
-            
+
             return aggregate;
         }
 
         public void loadEvents(List<EventEntity> events)
         {
             Events = events;
-            if(events.Count() == 0)
+            if (events.Count() == 0)
                 this.Sequence = 0;
             else
                 this.Sequence = Events.Last().Sequence;
@@ -43,36 +35,37 @@ namespace InvitationCommandService.Domain.Domain
 
         public void loadEvent(EventEntity? @event)
         {
-            if(this.Events == null)
+            if (this.Events == null)
             {
                 this.Events = new();
             }
-            if(@event is not null)
+            if (@event is not null)
             {
                 this.Events.Add(@event);
                 this.Sequence = @event.Sequence;
             }
         }
 
-        public void GenerateAggregateId(int subscribtionId , int memberId)
+        public void GenerateAggregateId(int subscribtionId, int memberId)
         {
             this.AggregateId = $"{memberId}-{subscribtionId}";
-           
+
         }
         public void CanDoEvent()
         {
-            if(Events == null || State == null)
+            if (Events == null || State == null)
             {
                 throw new Exception("Exception in Aggregate => CanDoEvent");
             }
-            if(Events.Count == 0)
+            if (Events.Count == 0)
             {
                 State.Empty();
-            }else
+            }
+            else
             {
                 switch (Events.Last().Type)
                 {
-                    case "SendEvent": 
+                    case "SendEvent":
                         State.Send();
                         break;
                     case "CancelEvent":
@@ -100,9 +93,9 @@ namespace InvitationCommandService.Domain.Domain
                 }
             }
         }
-    
-       
-        
+
+
+
     }
 
 }
