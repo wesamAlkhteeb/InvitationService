@@ -50,15 +50,9 @@ namespace InvitationQueryTest {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::InvitationQueryTest.ManyPermission> __Marshaller_Permissions_v1_ManyPermission = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.ManyPermission.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.AddPermisson> __Marshaller_Permissions_v1_AddPermisson = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.AddPermisson.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryTest.PermissionId> __Marshaller_Permissions_v1_PermissionId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.PermissionId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::InvitationQueryTest.Response> __Marshaller_Permissions_v1_Response = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.Response.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.UpdatePermission> __Marshaller_Permissions_v1_UpdatePermission = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.UpdatePermission.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.DeletePermission> __Marshaller_Permissions_v1_DeletePermission = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.DeletePermission.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.PermissionId> __Marshaller_Permissions_v1_PermissionId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.PermissionId.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::InvitationQueryTest.PermissionPage, global::InvitationQueryTest.ManyPermission> __Method_GetAll = new grpc::Method<global::InvitationQueryTest.PermissionPage, global::InvitationQueryTest.ManyPermission>(
@@ -67,30 +61,6 @@ namespace InvitationQueryTest {
         "GetAll",
         __Marshaller_Permissions_v1_PermissionPage,
         __Marshaller_Permissions_v1_ManyPermission);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryTest.AddPermisson, global::InvitationQueryTest.Response> __Method_Add = new grpc::Method<global::InvitationQueryTest.AddPermisson, global::InvitationQueryTest.Response>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Add",
-        __Marshaller_Permissions_v1_AddPermisson,
-        __Marshaller_Permissions_v1_Response);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryTest.UpdatePermission, global::InvitationQueryTest.Response> __Method_Update = new grpc::Method<global::InvitationQueryTest.UpdatePermission, global::InvitationQueryTest.Response>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Update",
-        __Marshaller_Permissions_v1_UpdatePermission,
-        __Marshaller_Permissions_v1_Response);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryTest.DeletePermission, global::InvitationQueryTest.Response> __Method_Delete = new grpc::Method<global::InvitationQueryTest.DeletePermission, global::InvitationQueryTest.Response>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Delete",
-        __Marshaller_Permissions_v1_DeletePermission,
-        __Marshaller_Permissions_v1_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::InvitationQueryTest.PermissionId, global::InvitationQueryTest.Response> __Method_Check = new grpc::Method<global::InvitationQueryTest.PermissionId, global::InvitationQueryTest.Response>(
@@ -152,66 +122,6 @@ namespace InvitationQueryTest {
       public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManyPermission> GetAllAsync(global::InvitationQueryTest.PermissionPage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAll, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.Response Add(global::InvitationQueryTest.AddPermisson request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return Add(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.Response Add(global::InvitationQueryTest.AddPermisson request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_Add, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.Response> AddAsync(global::InvitationQueryTest.AddPermisson request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return AddAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.Response> AddAsync(global::InvitationQueryTest.AddPermisson request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_Add, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.Response Update(global::InvitationQueryTest.UpdatePermission request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.Response Update(global::InvitationQueryTest.UpdatePermission request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.Response> UpdateAsync(global::InvitationQueryTest.UpdatePermission request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.Response> UpdateAsync(global::InvitationQueryTest.UpdatePermission request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.Response Delete(global::InvitationQueryTest.DeletePermission request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return Delete(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.Response Delete(global::InvitationQueryTest.DeletePermission request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_Delete, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.Response> DeleteAsync(global::InvitationQueryTest.DeletePermission request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.Response> DeleteAsync(global::InvitationQueryTest.DeletePermission request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_Delete, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::InvitationQueryTest.Response Check(global::InvitationQueryTest.PermissionId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))

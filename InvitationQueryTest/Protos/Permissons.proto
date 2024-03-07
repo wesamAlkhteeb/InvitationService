@@ -6,9 +6,6 @@ package Permissions.v1;
 
 service Permissions{
   rpc GetAll(PermissionPage) returns (ManyPermission);
-  rpc Add(AddPermisson) returns (Response);
-  rpc Update(UpdatePermission) returns (Response);
-  rpc Delete(DeletePermission) returns (Response);	
   rpc Check(PermissionId) returns (Response);
 }
 
@@ -18,7 +15,6 @@ message PermissionId{
 }
 
 message Response {
-	int32 id = 1;
 	string message =2;
 }
 
@@ -33,17 +29,4 @@ message PermissionPage {
 
 message ManyPermission{
 	repeated Permission Permission = 1;
-}
-
-message AddPermisson{
-	string name = 1;
-}
-
-message UpdatePermission{
-	int32 id = 1;
-	string name = 2;
-}
-
-message DeletePermission{
-	int32 id = 1;
 }

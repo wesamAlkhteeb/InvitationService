@@ -50,15 +50,9 @@ namespace InvitationQueryService {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::InvitationQueryService.ManyPermission> __Marshaller_Permissions_v1_ManyPermission = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.ManyPermission.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.AddPermisson> __Marshaller_Permissions_v1_AddPermisson = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.AddPermisson.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryService.PermissionId> __Marshaller_Permissions_v1_PermissionId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.PermissionId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::InvitationQueryService.Response> __Marshaller_Permissions_v1_Response = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.Response.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.UpdatePermission> __Marshaller_Permissions_v1_UpdatePermission = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.UpdatePermission.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.DeletePermission> __Marshaller_Permissions_v1_DeletePermission = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.DeletePermission.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.PermissionId> __Marshaller_Permissions_v1_PermissionId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.PermissionId.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::InvitationQueryService.PermissionPage, global::InvitationQueryService.ManyPermission> __Method_GetAll = new grpc::Method<global::InvitationQueryService.PermissionPage, global::InvitationQueryService.ManyPermission>(
@@ -67,30 +61,6 @@ namespace InvitationQueryService {
         "GetAll",
         __Marshaller_Permissions_v1_PermissionPage,
         __Marshaller_Permissions_v1_ManyPermission);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryService.AddPermisson, global::InvitationQueryService.Response> __Method_Add = new grpc::Method<global::InvitationQueryService.AddPermisson, global::InvitationQueryService.Response>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Add",
-        __Marshaller_Permissions_v1_AddPermisson,
-        __Marshaller_Permissions_v1_Response);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryService.UpdatePermission, global::InvitationQueryService.Response> __Method_Update = new grpc::Method<global::InvitationQueryService.UpdatePermission, global::InvitationQueryService.Response>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Update",
-        __Marshaller_Permissions_v1_UpdatePermission,
-        __Marshaller_Permissions_v1_Response);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryService.DeletePermission, global::InvitationQueryService.Response> __Method_Delete = new grpc::Method<global::InvitationQueryService.DeletePermission, global::InvitationQueryService.Response>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Delete",
-        __Marshaller_Permissions_v1_DeletePermission,
-        __Marshaller_Permissions_v1_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::InvitationQueryService.PermissionId, global::InvitationQueryService.Response> __Method_Check = new grpc::Method<global::InvitationQueryService.PermissionId, global::InvitationQueryService.Response>(
@@ -117,24 +87,6 @@ namespace InvitationQueryService {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.Response> Add(global::InvitationQueryService.AddPermisson request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.Response> Update(global::InvitationQueryService.UpdatePermission request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.Response> Delete(global::InvitationQueryService.DeletePermission request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.Response> Check(global::InvitationQueryService.PermissionId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -149,9 +101,6 @@ namespace InvitationQueryService {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetAll, serviceImpl.GetAll)
-          .AddMethod(__Method_Add, serviceImpl.Add)
-          .AddMethod(__Method_Update, serviceImpl.Update)
-          .AddMethod(__Method_Delete, serviceImpl.Delete)
           .AddMethod(__Method_Check, serviceImpl.Check).Build();
     }
 
@@ -163,9 +112,6 @@ namespace InvitationQueryService {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, PermissionsBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetAll, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.PermissionPage, global::InvitationQueryService.ManyPermission>(serviceImpl.GetAll));
-      serviceBinder.AddMethod(__Method_Add, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.AddPermisson, global::InvitationQueryService.Response>(serviceImpl.Add));
-      serviceBinder.AddMethod(__Method_Update, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.UpdatePermission, global::InvitationQueryService.Response>(serviceImpl.Update));
-      serviceBinder.AddMethod(__Method_Delete, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.DeletePermission, global::InvitationQueryService.Response>(serviceImpl.Delete));
       serviceBinder.AddMethod(__Method_Check, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.PermissionId, global::InvitationQueryService.Response>(serviceImpl.Check));
     }
 

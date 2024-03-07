@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvitationQueryTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff7bfd546217548a188633f01f43aac3862caf35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67b93327a547cbac133e1ed86293f90dc12288e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvitationQueryTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvitationQueryTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

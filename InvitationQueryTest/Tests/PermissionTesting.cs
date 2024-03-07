@@ -1,7 +1,10 @@
 ﻿using Grpc.Core;
 using InvintionCommandTest.Helper;
 using InvitationQueryService;
+using InvitationQueryService.Domain.Entities;
+using InvitationQueryService.Infrastructure.Database;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
 using Xunit.Abstractions;
 
 namespace InvitationQueryTest.Tests
@@ -27,6 +30,7 @@ namespace InvitationQueryTest.Tests
                 NumberPage = 1
             });
             Assert.NotNull(data);
+            Assert.Equal(2, data.Permission.Count());
         }
 
         [Fact]
@@ -35,7 +39,7 @@ namespace InvitationQueryTest.Tests
 
             PermissionPage permissionPage = new PermissionPage
             {
-                NumberPage = 0
+                NumberPage = -1
             };
 
             await Assert.ThrowsAsync<RpcException>(async () =>
@@ -50,83 +54,21 @@ namespace InvitationQueryTest.Tests
         }
 
         [Fact]
-        public async Task AddPermission_EmptyName_Exception() {
-            Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
-            await Assert.ThrowsAsync<RpcException>(async () =>
-            {
-                await _client.AddAsync(new AddPermisson
-                {
-                    Name=""
-                });
-            });
-        }
-
-        [Fact]
-        public async Task AddPermission_AddLengthNameMoreThanfour_Successfully()
-        {
-            Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
-            var data = await _client.AddAsync(new AddPermisson
-            {
-                Name = "Full Permissions"
-            });
-            Assert.NotNull(data);
-        }
-
-        [Fact]
-        public async Task UpdatePermission_EmptyName_Exception()
-        {
-            Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
-            await _client.AddAsync(new AddPermisson
-            {
-                Name = "Full Controll"
-            });
-            await Assert.ThrowsAsync<RpcException>(async () =>
-            {
-                await _client.UpdateAsync(new UpdatePermission
-                {
-                    Id = 1,
-                    Name = ""
-                });
-            });
-        }
-
-        [Fact]
-        public async Task UpdatePermission_AddLengthNameMoreThanfour_Successfully()
-        {
-            Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
-            var data = await _client.AddAsync(new AddPermisson
-            {
-                Name = "Full Permissions"
-            });
-            Assert.NotNull(data);
-        }
-
-        [Fact]
-        public async Task DeletePermission_NegativeId_Exception()
-        {
-            Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
-            
-            await Assert.ThrowsAsync<RpcException>(async () =>
-            {
-                await _client.DeleteAsync(new DeletePermission
-                {
-                    Id = -1
-                });
-            });
-        }
-
-        [Fact]
         public async Task CheckPermission_Exists_Succesfully()
         {
             Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
-            await _client.AddAsync(new AddPermisson
+            var scope = _factory.Services.CreateScope();
+            var database = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
+            //I seed to permissions so this Id must be equal 3.
+            var permission = new PermissionEntity
             {
-                Name = "Full Controll"
-            });
-
-            var res = _client.CheckAsync(new PermissionId
+                Name = "TTT"
+            };
+            database.Permissions.Add(permission);
+            await database.SaveChangesAsync();
+            var res = await _client.CheckAsync(new PermissionId
             {
-                Id = 1
+                Id = permission.Id
             });
             Assert.NotNull(res);
         }

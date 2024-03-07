@@ -1,5 +1,6 @@
 ﻿using Grpc.Core;
 using InvitationQueryService;
+using InvitationQueryService.Application.QuerySide.CheckPermission;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Presentation.Exceptions;
 using InvitationQueryTest.QuerySide.GetAllPermissions;
@@ -34,6 +35,19 @@ namespace InvitationQueryService.Presentation.Services
                 });
             }
             return permission;
+        }
+        public override async Task<Response> Check(PermissionId request, ServerCallContext context)
+        {
+            if (request.Id < 1)
+            {
+                throw new BadPageException("Number Page must be positive.");
+            }
+            var query = new CheckPermissionQuery(request.Id);
+            string name = await mediator.Send(query);
+            return new Response
+            {
+                Message = $"Permission {name} is Exists"
+            };
         }
     }
 }

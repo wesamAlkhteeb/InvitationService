@@ -10,5 +10,6 @@ namespace InvitationQueryService.Application.Abstractions
     public interface IPermissionRepository
     {
         public Task<List<PermissionEntity>> GetAllPermissions(int page);
+        public Task<string> IsExistsPermission(int id);
     }
 }

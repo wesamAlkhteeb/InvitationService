@@ -6,10 +6,10 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Send
     public class SendInvitationQuery : IRequest<bool>
     {
         public int Id { get; set; }
-        public string AggregateId { get; set; }
+        public required string AggregateId { get; set; }
         public int Sequence { get; set; }
         public DateTime DateTime { get; set; }
-        public DataInfoModel Data { get; set; }
+        public required DataInfoModel Data { get; set; }
     }
 }
 

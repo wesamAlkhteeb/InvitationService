@@ -1,4 +1,5 @@
 ﻿using InvitationQueryService.Application.Abstractions;
+using InvitationQueryService.Application.Exceptions;
 using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Infrastructure.Database;
@@ -27,6 +28,16 @@ namespace InvitationQueryService.Infrastructure.Repository
             return await database.Permissions
                 .Skip(skip).Take(Constants.countItemInPage)
                 .ToListAsync();
+        }
+
+        public async Task<string> IsExistsPermission(int id)
+        {
+            string? name = await database.Permissions.Where(x => x.Id == id).Select(x => x.Name).FirstOrDefaultAsync();
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new NotFoundException("Permisson not found.");
+            }
+            return name;
         }
     }
 }
