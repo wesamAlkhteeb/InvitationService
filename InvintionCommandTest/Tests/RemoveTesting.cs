@@ -1,8 +1,11 @@
 ﻿using Grpc.Core;
+using InvintionCommandTest.Database;
 using InvintionCommandTest.Helper;
 
 using InvitationCommandTest;
+using InvitationQueryService.Database;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
 using Xunit.Abstractions;
 
 namespace InvintionCommandTest.Tests
@@ -10,14 +13,17 @@ namespace InvintionCommandTest.Tests
     public class RemoveTesting : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly WebApplicationFactory<Program> _factory;
+        private readonly InvitationDbContext database;
 
         public RemoveTesting(WebApplicationFactory<Program> factory, ITestOutputHelper helper)
         {
             _factory = factory.WithDefaultConfigurations(helper, services =>
             {
                 services.ReplaceWithInMemoryDatabase();
-
+                services.RejectServiceBus();
             });
+            var scope = factory.Services.CreateScope();
+            this.database = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
         }
 
         [Fact]
@@ -44,7 +50,9 @@ namespace InvintionCommandTest.Tests
                 Name = "PurchaseCards"
             });
             await client.SendInvitationToMemberAsync(invitationRequest);
+            DatabaseHelper.CheckEvent(_factory, "SendEvent", 1);
             await client.AcceptAsync(invitationRequest.InvitationInfo);
+            DatabaseHelper.CheckEvent(_factory, "AcceptEvent", 2);
             var response = await client.RemoveMemberAsync(invitationRequest.InvitationInfo);
             Assert.NotNull(response);
         }

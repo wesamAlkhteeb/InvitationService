@@ -1,4 +1,4 @@
-﻿namespace InvitationCommandService.Application.Abstraction
+﻿namespace InvitationQueryService.Application.Abstraction
 {
     public interface IServiceBusRepository
     {

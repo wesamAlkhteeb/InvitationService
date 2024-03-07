@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
-using InvitationCommandService.Domain.Exceptions;
+using InvitationQueryService.Domain.Exceptions;
 
-namespace InvitationCommandService.Presentation.Interceptors
+namespace InvitationQueryService.Presentation.Interceptors
 {
     public class HandleErrorInterceptor : Interceptor
     {

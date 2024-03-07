@@ -1,4 +1,4 @@
-using InvitationCommandService.Application.ServiceBus;
+using InvitationQueryService.Application.ServiceBus;
 using InvitationQueryService.Application.Abstractions;
 using InvitationQueryService.Application.QuerySideServiceBus.Send;
 using InvitationQueryService.Infrastructure.Database;
@@ -18,6 +18,9 @@ builder.Services.AddDbContext<InvitationDbContext>(
 
     );
 builder.Services.AddScoped<IInvitationEventsRepository, InvitationEventsRepository>();
+builder.Services.AddScoped<ISubscriptorRepository, SubscriptorRepository>();
+builder.Services.AddScoped<IPermissionRepository, PermissionRepository>();
+
 
 builder.Services.AddHostedService<InvitationListener>();
 

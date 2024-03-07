@@ -1,7 +1,7 @@
-﻿using InvitationCommandService.Domain.Entities.Events;
-using InvitationCommandService.Domain.StateInvitation;
+﻿using InvitationQueryService.Domain.Entities.Events;
+using InvitationQueryService.Domain.StateInvitation;
 
-namespace InvitationCommandService.Domain.Domain
+namespace InvitationQueryService.Domain.Domain
 {
     public class Aggregate
     {

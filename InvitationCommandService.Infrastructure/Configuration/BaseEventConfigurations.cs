@@ -1,8 +1,8 @@
-﻿using InvitationCommandService.Domain.Entities.Events;
+﻿using InvitationQueryService.Domain.Entities.Events;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace InvitationCommandService.Infrastructure.Configuration
+namespace InvitationQueryService.Infrastructure.Configuration
 {
     public class BaseEventConfigurations : IEntityTypeConfiguration<EventEntity>
     {

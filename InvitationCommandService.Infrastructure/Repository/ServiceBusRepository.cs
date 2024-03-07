@@ -1,7 +1,7 @@
-﻿using InvitationCommandService.Application.Abstraction;
-using InvitationCommandService.Application.ServiceBus;
+﻿using InvitationQueryService.Application.Abstraction;
+using InvitationQueryService.Application.ServiceBus;
 
-namespace InvitationCommandService.Infrastructure.Repository
+namespace InvitationQueryService.Infrastructure.Repository
 {
     public class ServiceBusRepository : IServiceBusRepository
     {

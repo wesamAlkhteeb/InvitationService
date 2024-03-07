@@ -1,4 +1,4 @@
-﻿namespace InvitationCommandService.Domain.Model
+﻿namespace InvitationQueryService.Domain.Model
 {
     public class PermissionsModel
     {

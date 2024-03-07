@@ -1,6 +1,6 @@
 ﻿
 
-namespace InvitationCommandService.Domain.Entities.Events
+namespace InvitationQueryService.Domain.Entities.Events
 {
 
     public abstract class EventEntity

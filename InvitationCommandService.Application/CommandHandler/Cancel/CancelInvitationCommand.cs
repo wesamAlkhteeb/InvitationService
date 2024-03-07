@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace InvitationCommandService.Application.CommandHandler.Cancel
+namespace InvitationQueryService.Application.CommandHandler.Cancel
 {
     public record CancelInvitationCommand(int accountId,
             int subscriptionId,

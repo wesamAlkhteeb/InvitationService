@@ -1,4 +1,6 @@
-﻿using InvitationCommandService.Database;
+﻿using Azure.Messaging.ServiceBus;
+using InvitationQueryService.Database;
+using InvitationQueryService.Infrastructure.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -15,6 +17,20 @@ namespace InvintionCommandTest.Helper
             var dbName = Guid.NewGuid().ToString();
 
             services.AddDbContext<InvitationDbContext>(options => options.UseInMemoryDatabase(dbName));
+        }
+        public static void RejectServiceBus(this IServiceCollection services)
+        {
+
+            AzureOptions azure = services.BuildServiceProvider().GetService<AzureOptions>()!;
+            
+            var descriptor = services.Single(d => d.ServiceType == typeof(AzureOptions));
+
+            services.Remove(descriptor);
+
+            azure.IsNeedToSend = false;
+
+            services.AddSingleton<AzureOptions>(azure);
+
         }
     }
 }

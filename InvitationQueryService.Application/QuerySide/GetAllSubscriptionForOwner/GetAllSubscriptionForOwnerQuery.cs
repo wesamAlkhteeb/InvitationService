@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace InvitationQueryTest.QuerySide.GetAllSubscriptionForOwner
 {
-    public record GetAllSubscriptionForOwnerQuery(int page):IRequest<List<SubscriptionsEntity>>;
+    public record GetAllSubscriptionForOwnerQuery(int page, int OwnerId):IRequest<List<SubscriptionsEntity>>;
 }

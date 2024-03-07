@@ -1,15 +1,16 @@
 ﻿using Azure.Messaging.ServiceBus;
-using InvitationCommandService.Database;
-using InvitationCommandService.Infrastructure.ServiceBus;
+using InvitationQueryService.Database;
+using InvitationQueryService.Infrastructure.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
 
-namespace InvitationCommandService.Application.ServiceBus
+namespace InvitationQueryService.Application.ServiceBus
 {
     public class ServiceBusPublisher
     {
         protected readonly ServiceBusSender _sender;
+        private readonly AzureOptions azure;
         protected readonly IServiceProvider _provider;
         private readonly object _lockObject = new();
         private bool IsBusy { get; set; }
@@ -18,22 +19,31 @@ namespace InvitationCommandService.Application.ServiceBus
         {
             ServiceBusClient client = new ServiceBusClient(azure.ConnectionString);
             _sender = client.CreateSender(azure.TopicName);
+            this.azure = azure;
             _provider = provider;
         }
 
         public async Task StartPublishing()
         {
+            if (!azure.IsNeedToSend) return;
 
             await PublishEvents();
             //Task.Run(() =>
             //{
             //    if (IsBusy) return;
-            //    IsBusy = true;
-            //    lock (_lockObject)
+            //    try
             //    {
-            //        PublishEvents(subscription.ToString()).GetAwaiter().GetResult();
+            //        IsBusy = true;
+            //        lock (_lockObject)
+            //        {
+            //            PublishEvents().GetAwaiter().GetResult();
+            //        }
             //    }
-            //    IsBusy = false;
+            //    finally
+            //    {
+            //        IsBusy = false;
+            //    }
+                
             //});
 
         }

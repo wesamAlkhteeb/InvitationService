@@ -1,4 +1,5 @@
-﻿using InvitationQueryService.Domain.Entities;
+﻿using InvitationQueryService.Domain;
+using InvitationQueryService.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -19,7 +20,8 @@ namespace InvitationQueryService.Infrastructure.Configurations
             builder.HasData(new SubscriptionsEntity
             {
                 Id = 1,
-                AccountId = 1
+                AccountId = 1,
+                Type = SubscriptionType.A.ToString()
             });
         }
     }

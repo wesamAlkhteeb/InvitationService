@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace InvitationQueryService.Infrastructure.Configurations
 {
-    public class SubscriptorConfiguration : IEntityTypeConfiguration<SubscriptorEntity>
+    public class SubscriptorConfiguration : IEntityTypeConfiguration<SubscriptionsEntity>
     {
-        public void Configure(EntityTypeBuilder<SubscriptorEntity> builder)
+        public void Configure(EntityTypeBuilder<SubscriptionsEntity> builder)
         {
             //builder.Property(x=>x.Sequence).IsUnicode(true);
             builder.HasMany<SubscriptorPermissionsEntity>()

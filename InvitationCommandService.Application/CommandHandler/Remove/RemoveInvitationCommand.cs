@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace InvitationCommandService.Application.CommandHandler.Remove
+namespace InvitationQueryService.Application.CommandHandler.Remove
 {
     public record RemoveInvitationCommand(int accountId,
             int subscriptionId,

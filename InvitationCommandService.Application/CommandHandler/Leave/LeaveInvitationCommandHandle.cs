@@ -1,11 +1,11 @@
-﻿using InvitationCommandService.Application.Abstraction;
-using InvitationCommandService.Domain.Domain;
-using InvitationCommandService.Domain.Entities.Data;
-using InvitationCommandService.Domain.Entities.Events;
-using InvitationCommandService.Domain.StateInvitation;
+﻿using InvitationQueryService.Application.Abstraction;
+using InvitationQueryService.Domain.Domain;
+using InvitationQueryService.Domain.Entities.Data;
+using InvitationQueryService.Domain.Entities.Events;
+using InvitationQueryService.Domain.StateInvitation;
 using MediatR;
 
-namespace InvitationCommandService.Application.CommandHandler.Leave
+namespace InvitationQueryService.Application.CommandHandler.Leave
 {
     public class LeaveInvitationCommandHandle : IRequestHandler<LeaveInvitationCommand, int>
     {

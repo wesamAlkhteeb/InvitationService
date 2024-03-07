@@ -8,6 +8,6 @@
         public int SubscriptorId { get; set; }
         public PermissionEntity? Permissions { get; set; }
         public SubscriptionsEntity? Subscriptions { get; set; }
-        public SubscriptorEntity? Subscriptor { get; set; }
+        public SubscriptionsEntity? Subscriptor { get; set; }
     }
 }

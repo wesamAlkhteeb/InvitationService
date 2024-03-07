@@ -1,32 +1,59 @@
 syntax = "proto3";
+
 option csharp_namespace = "InvitationQueryTest";
+
 package Subscriptions.v1;
 
+
 service Subscriptions{
-  rpc GetAllSubscriptorInSubscription(SubscriptionPage ) returns (ManySubscrptor);
-  rpc GetAllSubscriptionForSubscriptor(SubscriptionPage ) returns (ManySubscrption);
-  rpc GetStatusSbuscriptorInSbuscription(Status ) returns (StatusResult);
-  rpc GetAllSubscriptionForOwner(SubscriptionPage ) returns (ManySubscrption);
+  rpc GetAllSubscriptorInSubscription(UserSubscriptor ) returns (ManyUserSubscriptorReuslt);
+  rpc GetAllSubscriptionForSubscriptor(UserSubscription) returns (ManyUserSubscriptorReuslt);
+  rpc GetAllSubscriptionForOwner(OwnerSubscription) returns (ManyOwnerSubscriptionReuslt);
 }
 
 
-message SubscriptionPage {
-	int32 numberPage = 1;
-}
-message ManySubscrptor{
-	repeated int32 id =1;
+message UserSubscriptor{
+	int32 page =1 ;
+	int32 subscriptionId =2;
 }
 
-message ManySubscrption{
-	repeated int32 id =1;
+message UserSubscriptorReuslt{
+	int32 id =1;
+	int32 userId =2;
+	string status =3;
+}
+
+message ManyUserSubscriptorReuslt{
+	repeated UserSubscriptionReuslt userSubscriptionReuslt =1;
 }
 
 
-message Status {
-	int32 Userid = 1;
-	int32 Ownerid = 2;
+message UserSubscription{
+	int32 page =1 ;
+	int32 userId =2;
 }
 
-message StatusResult{
-	string state = 1;
+message UserSubscriptionReuslt{
+	int32 id =1;
+	string status =2;
+	int32 subscriptionId = 3;
 }
+
+message ManyUserSubscriptionReuslt{
+	repeated UserSubscriptionReuslt userSubscriptionReuslt =1;
+}
+
+
+message OwnerSubscription{
+	int32 page =1 ;
+	int32 ownerId =2;
+}
+
+message OwnerSubscriptionReuslt{
+	int32 id =1 ;
+	string type = 2;
+}
+message ManyOwnerSubscriptionReuslt{
+	repeated OwnerSubscriptionReuslt ownerSubscriptionReuslt =1;
+}
+

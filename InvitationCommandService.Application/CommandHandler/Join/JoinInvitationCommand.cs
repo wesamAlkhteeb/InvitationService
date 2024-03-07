@@ -1,7 +1,7 @@
-﻿using InvitationCommandService.Domain.Model;
+﻿using InvitationQueryService.Domain.Model;
 using MediatR;
 
-namespace InvitationCommandService.Application.CommandHandler.Join
+namespace InvitationQueryService.Application.CommandHandler.Join
 {
     public record JoinInvitationCommand(int accountId,
             int subscriptionId,

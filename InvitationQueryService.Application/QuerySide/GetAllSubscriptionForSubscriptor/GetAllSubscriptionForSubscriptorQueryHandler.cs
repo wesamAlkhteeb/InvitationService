@@ -1,13 +1,20 @@
-﻿using InvitationQueryService.Domain.Entities;
+﻿using InvitationQueryService.Application.Abstractions;
+using InvitationQueryService.Domain.Entities;
 using MediatR;
 
 namespace InvitationQueryTest.QuerySide.GetAllSubscriptionForSubscriptor
 {
     public class GetAllSubscriptionForSubscriptorQueryHandler : IRequestHandler<GetAllSubscriptionForSubscriptorQuery, List<SubscriptionsEntity>>
     {
-        public Task<List<SubscriptionsEntity>> Handle(GetAllSubscriptionForSubscriptorQuery request, CancellationToken cancellationToken)
+        private readonly ISubscriptorRepository subscriptorRepository;
+
+        public GetAllSubscriptionForSubscriptorQueryHandler(ISubscriptorRepository subscriptorRepository)
         {
-            throw new NotImplementedException();
+            this.subscriptorRepository = subscriptorRepository;
+        }
+        public async Task<List<SubscriptionsEntity>> Handle(GetAllSubscriptionForSubscriptorQuery request, CancellationToken cancellationToken)
+        {
+            return await subscriptorRepository.GetSubscriptionForUser(request.page, request.userId);
         }
     }
 }

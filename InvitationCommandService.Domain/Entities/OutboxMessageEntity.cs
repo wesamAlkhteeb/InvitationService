@@ -1,8 +1,8 @@
 ﻿
 
-using InvitationCommandService.Domain.Entities.Events;
+using InvitationQueryService.Domain.Entities.Events;
 
-namespace InvitationCommandService.Domain.Entities
+namespace InvitationQueryService.Domain.Entities
 {
     public class OutboxMessageEntity
     {

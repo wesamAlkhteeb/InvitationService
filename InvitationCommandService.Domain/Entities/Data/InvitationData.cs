@@ -1,6 +1,6 @@
-﻿using InvitationCommandService.Domain.Model;
+﻿using InvitationQueryService.Domain.Model;
 
-namespace InvitationCommandService.Domain.Entities.Data
+namespace InvitationQueryService.Domain.Entities.Data
 {
     public class InvitationData
     {

@@ -1,6 +1,6 @@
-﻿using InvitationCommandService.Domain.Entities.Events;
+﻿using InvitationQueryService.Domain.Entities.Events;
 
-namespace InvitationCommandService.Application.Abstraction
+namespace InvitationQueryService.Application.Abstraction
 {
     public interface IEventRepository
     {

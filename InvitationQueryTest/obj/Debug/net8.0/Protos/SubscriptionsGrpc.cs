@@ -46,47 +46,39 @@ namespace InvitationQueryTest {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.SubscriptionPage> __Marshaller_Subscriptions_v1_SubscriptionPage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.SubscriptionPage.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryTest.UserSubscriptor> __Marshaller_Subscriptions_v1_UserSubscriptor = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.UserSubscriptor.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.ManySubscrptor> __Marshaller_Subscriptions_v1_ManySubscrptor = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.ManySubscrptor.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryTest.ManyUserSubscriptorReuslt> __Marshaller_Subscriptions_v1_ManyUserSubscriptorReuslt = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.ManyUserSubscriptorReuslt.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.ManySubscrption> __Marshaller_Subscriptions_v1_ManySubscrption = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.ManySubscrption.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryTest.UserSubscription> __Marshaller_Subscriptions_v1_UserSubscription = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.UserSubscription.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.Status> __Marshaller_Subscriptions_v1_Status = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.Status.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryTest.OwnerSubscription> __Marshaller_Subscriptions_v1_OwnerSubscription = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.OwnerSubscription.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryTest.StatusResult> __Marshaller_Subscriptions_v1_StatusResult = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.StatusResult.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryTest.ManyOwnerSubscriptionReuslt> __Marshaller_Subscriptions_v1_ManyOwnerSubscriptionReuslt = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryTest.ManyOwnerSubscriptionReuslt.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryTest.SubscriptionPage, global::InvitationQueryTest.ManySubscrptor> __Method_GetAllSubscriptorInSubscription = new grpc::Method<global::InvitationQueryTest.SubscriptionPage, global::InvitationQueryTest.ManySubscrptor>(
+    static readonly grpc::Method<global::InvitationQueryTest.UserSubscriptor, global::InvitationQueryTest.ManyUserSubscriptorReuslt> __Method_GetAllSubscriptorInSubscription = new grpc::Method<global::InvitationQueryTest.UserSubscriptor, global::InvitationQueryTest.ManyUserSubscriptorReuslt>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllSubscriptorInSubscription",
-        __Marshaller_Subscriptions_v1_SubscriptionPage,
-        __Marshaller_Subscriptions_v1_ManySubscrptor);
+        __Marshaller_Subscriptions_v1_UserSubscriptor,
+        __Marshaller_Subscriptions_v1_ManyUserSubscriptorReuslt);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryTest.SubscriptionPage, global::InvitationQueryTest.ManySubscrption> __Method_GetAllSubscriptionForSubscriptor = new grpc::Method<global::InvitationQueryTest.SubscriptionPage, global::InvitationQueryTest.ManySubscrption>(
+    static readonly grpc::Method<global::InvitationQueryTest.UserSubscription, global::InvitationQueryTest.ManyUserSubscriptorReuslt> __Method_GetAllSubscriptionForSubscriptor = new grpc::Method<global::InvitationQueryTest.UserSubscription, global::InvitationQueryTest.ManyUserSubscriptorReuslt>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllSubscriptionForSubscriptor",
-        __Marshaller_Subscriptions_v1_SubscriptionPage,
-        __Marshaller_Subscriptions_v1_ManySubscrption);
+        __Marshaller_Subscriptions_v1_UserSubscription,
+        __Marshaller_Subscriptions_v1_ManyUserSubscriptorReuslt);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryTest.Status, global::InvitationQueryTest.StatusResult> __Method_GetStatusSbuscriptorInSbuscription = new grpc::Method<global::InvitationQueryTest.Status, global::InvitationQueryTest.StatusResult>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetStatusSbuscriptorInSbuscription",
-        __Marshaller_Subscriptions_v1_Status,
-        __Marshaller_Subscriptions_v1_StatusResult);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryTest.SubscriptionPage, global::InvitationQueryTest.ManySubscrption> __Method_GetAllSubscriptionForOwner = new grpc::Method<global::InvitationQueryTest.SubscriptionPage, global::InvitationQueryTest.ManySubscrption>(
+    static readonly grpc::Method<global::InvitationQueryTest.OwnerSubscription, global::InvitationQueryTest.ManyOwnerSubscriptionReuslt> __Method_GetAllSubscriptionForOwner = new grpc::Method<global::InvitationQueryTest.OwnerSubscription, global::InvitationQueryTest.ManyOwnerSubscriptionReuslt>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllSubscriptionForOwner",
-        __Marshaller_Subscriptions_v1_SubscriptionPage,
-        __Marshaller_Subscriptions_v1_ManySubscrption);
+        __Marshaller_Subscriptions_v1_OwnerSubscription,
+        __Marshaller_Subscriptions_v1_ManyOwnerSubscriptionReuslt);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -122,82 +114,62 @@ namespace InvitationQueryTest {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.ManySubscrptor GetAllSubscriptorInSubscription(global::InvitationQueryTest.SubscriptionPage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::InvitationQueryTest.ManyUserSubscriptorReuslt GetAllSubscriptorInSubscription(global::InvitationQueryTest.UserSubscriptor request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllSubscriptorInSubscription(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.ManySubscrptor GetAllSubscriptorInSubscription(global::InvitationQueryTest.SubscriptionPage request, grpc::CallOptions options)
+      public virtual global::InvitationQueryTest.ManyUserSubscriptorReuslt GetAllSubscriptorInSubscription(global::InvitationQueryTest.UserSubscriptor request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAllSubscriptorInSubscription, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManySubscrptor> GetAllSubscriptorInSubscriptionAsync(global::InvitationQueryTest.SubscriptionPage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManyUserSubscriptorReuslt> GetAllSubscriptorInSubscriptionAsync(global::InvitationQueryTest.UserSubscriptor request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllSubscriptorInSubscriptionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManySubscrptor> GetAllSubscriptorInSubscriptionAsync(global::InvitationQueryTest.SubscriptionPage request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManyUserSubscriptorReuslt> GetAllSubscriptorInSubscriptionAsync(global::InvitationQueryTest.UserSubscriptor request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAllSubscriptorInSubscription, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.ManySubscrption GetAllSubscriptionForSubscriptor(global::InvitationQueryTest.SubscriptionPage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::InvitationQueryTest.ManyUserSubscriptorReuslt GetAllSubscriptionForSubscriptor(global::InvitationQueryTest.UserSubscription request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllSubscriptionForSubscriptor(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.ManySubscrption GetAllSubscriptionForSubscriptor(global::InvitationQueryTest.SubscriptionPage request, grpc::CallOptions options)
+      public virtual global::InvitationQueryTest.ManyUserSubscriptorReuslt GetAllSubscriptionForSubscriptor(global::InvitationQueryTest.UserSubscription request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAllSubscriptionForSubscriptor, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManySubscrption> GetAllSubscriptionForSubscriptorAsync(global::InvitationQueryTest.SubscriptionPage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManyUserSubscriptorReuslt> GetAllSubscriptionForSubscriptorAsync(global::InvitationQueryTest.UserSubscription request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllSubscriptionForSubscriptorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManySubscrption> GetAllSubscriptionForSubscriptorAsync(global::InvitationQueryTest.SubscriptionPage request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManyUserSubscriptorReuslt> GetAllSubscriptionForSubscriptorAsync(global::InvitationQueryTest.UserSubscription request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAllSubscriptionForSubscriptor, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.StatusResult GetStatusSbuscriptorInSbuscription(global::InvitationQueryTest.Status request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetStatusSbuscriptorInSbuscription(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.StatusResult GetStatusSbuscriptorInSbuscription(global::InvitationQueryTest.Status request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetStatusSbuscriptorInSbuscription, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.StatusResult> GetStatusSbuscriptorInSbuscriptionAsync(global::InvitationQueryTest.Status request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetStatusSbuscriptorInSbuscriptionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.StatusResult> GetStatusSbuscriptorInSbuscriptionAsync(global::InvitationQueryTest.Status request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetStatusSbuscriptorInSbuscription, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.ManySubscrption GetAllSubscriptionForOwner(global::InvitationQueryTest.SubscriptionPage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::InvitationQueryTest.ManyOwnerSubscriptionReuslt GetAllSubscriptionForOwner(global::InvitationQueryTest.OwnerSubscription request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllSubscriptionForOwner(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::InvitationQueryTest.ManySubscrption GetAllSubscriptionForOwner(global::InvitationQueryTest.SubscriptionPage request, grpc::CallOptions options)
+      public virtual global::InvitationQueryTest.ManyOwnerSubscriptionReuslt GetAllSubscriptionForOwner(global::InvitationQueryTest.OwnerSubscription request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAllSubscriptionForOwner, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManySubscrption> GetAllSubscriptionForOwnerAsync(global::InvitationQueryTest.SubscriptionPage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManyOwnerSubscriptionReuslt> GetAllSubscriptionForOwnerAsync(global::InvitationQueryTest.OwnerSubscription request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllSubscriptionForOwnerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManySubscrption> GetAllSubscriptionForOwnerAsync(global::InvitationQueryTest.SubscriptionPage request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::InvitationQueryTest.ManyOwnerSubscriptionReuslt> GetAllSubscriptionForOwnerAsync(global::InvitationQueryTest.OwnerSubscription request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAllSubscriptionForOwner, null, options, request);
       }

@@ -1,4 +1,5 @@
 ﻿using Grpc.Core;
+using InvintionCommandTest.Database;
 using InvintionCommandTest.Helper;
 using InvitationCommandTest;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -16,6 +17,7 @@ namespace InvintionCommandTest.Tests
             _factory = factory.WithDefaultConfigurations(helper, services =>
             {
                 services.ReplaceWithInMemoryDatabase();
+                services.RejectServiceBus();
             });
         }
 
@@ -43,7 +45,9 @@ namespace InvintionCommandTest.Tests
                 Name = "PurchaseCards"
             });
             await client.SendInvitationToMemberAsync(invitationRequest);
+            DatabaseHelper.CheckEvent(_factory, "SendEvent", 1);
             var response = await client.RejectAsync(invitationRequest.InvitationInfo);
+            DatabaseHelper.CheckEvent(_factory, "RejectEvent", 2);
             Assert.NotNull(response);
         }
 
@@ -90,7 +94,10 @@ namespace InvintionCommandTest.Tests
             });
 
             await client.SendInvitationToMemberAsync(invitationRequest);
+            DatabaseHelper.CheckEvent(_factory, "SendEvent", 1);
             await client.AcceptAsync(invitationRequest.InvitationInfo);
+            DatabaseHelper.CheckEvent(_factory, "AcceptEvent", 2);
+
             await Assert.ThrowsAsync<RpcException>(async () =>
             {
                 await client.RejectAsync(invitationRequest.InvitationInfo);

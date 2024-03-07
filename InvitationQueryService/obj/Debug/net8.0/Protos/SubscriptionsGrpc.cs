@@ -46,47 +46,39 @@ namespace InvitationQueryService {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.SubscriptionPage> __Marshaller_Subscriptions_v1_SubscriptionPage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.SubscriptionPage.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryService.UserSubscriptor> __Marshaller_Subscriptions_v1_UserSubscriptor = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.UserSubscriptor.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.ManySubscrptor> __Marshaller_Subscriptions_v1_ManySubscrptor = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.ManySubscrptor.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryService.ManyUserSubscriptorReuslt> __Marshaller_Subscriptions_v1_ManyUserSubscriptorReuslt = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.ManyUserSubscriptorReuslt.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.ManySubscrption> __Marshaller_Subscriptions_v1_ManySubscrption = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.ManySubscrption.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryService.UserSubscription> __Marshaller_Subscriptions_v1_UserSubscription = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.UserSubscription.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.Status> __Marshaller_Subscriptions_v1_Status = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.Status.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryService.OwnerSubscription> __Marshaller_Subscriptions_v1_OwnerSubscription = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.OwnerSubscription.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::InvitationQueryService.StatusResult> __Marshaller_Subscriptions_v1_StatusResult = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.StatusResult.Parser));
+    static readonly grpc::Marshaller<global::InvitationQueryService.ManyOwnerSubscriptionReuslt> __Marshaller_Subscriptions_v1_ManyOwnerSubscriptionReuslt = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::InvitationQueryService.ManyOwnerSubscriptionReuslt.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrptor> __Method_GetAllSubscriptorInSubscription = new grpc::Method<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrptor>(
+    static readonly grpc::Method<global::InvitationQueryService.UserSubscriptor, global::InvitationQueryService.ManyUserSubscriptorReuslt> __Method_GetAllSubscriptorInSubscription = new grpc::Method<global::InvitationQueryService.UserSubscriptor, global::InvitationQueryService.ManyUserSubscriptorReuslt>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllSubscriptorInSubscription",
-        __Marshaller_Subscriptions_v1_SubscriptionPage,
-        __Marshaller_Subscriptions_v1_ManySubscrptor);
+        __Marshaller_Subscriptions_v1_UserSubscriptor,
+        __Marshaller_Subscriptions_v1_ManyUserSubscriptorReuslt);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrption> __Method_GetAllSubscriptionForSubscriptor = new grpc::Method<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrption>(
+    static readonly grpc::Method<global::InvitationQueryService.UserSubscription, global::InvitationQueryService.ManyUserSubscriptorReuslt> __Method_GetAllSubscriptionForSubscriptor = new grpc::Method<global::InvitationQueryService.UserSubscription, global::InvitationQueryService.ManyUserSubscriptorReuslt>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllSubscriptionForSubscriptor",
-        __Marshaller_Subscriptions_v1_SubscriptionPage,
-        __Marshaller_Subscriptions_v1_ManySubscrption);
+        __Marshaller_Subscriptions_v1_UserSubscription,
+        __Marshaller_Subscriptions_v1_ManyUserSubscriptorReuslt);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryService.Status, global::InvitationQueryService.StatusResult> __Method_GetStatusSbuscriptorInSbuscription = new grpc::Method<global::InvitationQueryService.Status, global::InvitationQueryService.StatusResult>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetStatusSbuscriptorInSbuscription",
-        __Marshaller_Subscriptions_v1_Status,
-        __Marshaller_Subscriptions_v1_StatusResult);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrption> __Method_GetAllSubscriptionForOwner = new grpc::Method<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrption>(
+    static readonly grpc::Method<global::InvitationQueryService.OwnerSubscription, global::InvitationQueryService.ManyOwnerSubscriptionReuslt> __Method_GetAllSubscriptionForOwner = new grpc::Method<global::InvitationQueryService.OwnerSubscription, global::InvitationQueryService.ManyOwnerSubscriptionReuslt>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllSubscriptionForOwner",
-        __Marshaller_Subscriptions_v1_SubscriptionPage,
-        __Marshaller_Subscriptions_v1_ManySubscrption);
+        __Marshaller_Subscriptions_v1_OwnerSubscription,
+        __Marshaller_Subscriptions_v1_ManyOwnerSubscriptionReuslt);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -99,25 +91,19 @@ namespace InvitationQueryService {
     public abstract partial class SubscriptionsBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.ManySubscrptor> GetAllSubscriptorInSubscription(global::InvitationQueryService.SubscriptionPage request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.ManyUserSubscriptorReuslt> GetAllSubscriptorInSubscription(global::InvitationQueryService.UserSubscriptor request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.ManySubscrption> GetAllSubscriptionForSubscriptor(global::InvitationQueryService.SubscriptionPage request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.ManyUserSubscriptorReuslt> GetAllSubscriptionForSubscriptor(global::InvitationQueryService.UserSubscription request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.StatusResult> GetStatusSbuscriptorInSbuscription(global::InvitationQueryService.Status request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.ManySubscrption> GetAllSubscriptionForOwner(global::InvitationQueryService.SubscriptionPage request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::InvitationQueryService.ManyOwnerSubscriptionReuslt> GetAllSubscriptionForOwner(global::InvitationQueryService.OwnerSubscription request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -132,7 +118,6 @@ namespace InvitationQueryService {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetAllSubscriptorInSubscription, serviceImpl.GetAllSubscriptorInSubscription)
           .AddMethod(__Method_GetAllSubscriptionForSubscriptor, serviceImpl.GetAllSubscriptionForSubscriptor)
-          .AddMethod(__Method_GetStatusSbuscriptorInSbuscription, serviceImpl.GetStatusSbuscriptorInSbuscription)
           .AddMethod(__Method_GetAllSubscriptionForOwner, serviceImpl.GetAllSubscriptionForOwner).Build();
     }
 
@@ -143,10 +128,9 @@ namespace InvitationQueryService {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, SubscriptionsBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetAllSubscriptorInSubscription, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrptor>(serviceImpl.GetAllSubscriptorInSubscription));
-      serviceBinder.AddMethod(__Method_GetAllSubscriptionForSubscriptor, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrption>(serviceImpl.GetAllSubscriptionForSubscriptor));
-      serviceBinder.AddMethod(__Method_GetStatusSbuscriptorInSbuscription, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.Status, global::InvitationQueryService.StatusResult>(serviceImpl.GetStatusSbuscriptorInSbuscription));
-      serviceBinder.AddMethod(__Method_GetAllSubscriptionForOwner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.SubscriptionPage, global::InvitationQueryService.ManySubscrption>(serviceImpl.GetAllSubscriptionForOwner));
+      serviceBinder.AddMethod(__Method_GetAllSubscriptorInSubscription, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.UserSubscriptor, global::InvitationQueryService.ManyUserSubscriptorReuslt>(serviceImpl.GetAllSubscriptorInSubscription));
+      serviceBinder.AddMethod(__Method_GetAllSubscriptionForSubscriptor, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.UserSubscription, global::InvitationQueryService.ManyUserSubscriptorReuslt>(serviceImpl.GetAllSubscriptionForSubscriptor));
+      serviceBinder.AddMethod(__Method_GetAllSubscriptionForOwner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::InvitationQueryService.OwnerSubscription, global::InvitationQueryService.ManyOwnerSubscriptionReuslt>(serviceImpl.GetAllSubscriptionForOwner));
     }
 
   }

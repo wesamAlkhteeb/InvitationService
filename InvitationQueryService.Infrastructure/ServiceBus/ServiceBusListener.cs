@@ -15,7 +15,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace InvitationCommandService.Application.ServiceBus
+namespace InvitationQueryService.Application.ServiceBus
 {
     public class InvitationListener : IHostedService
     {
@@ -75,13 +75,14 @@ namespace InvitationCommandService.Application.ServiceBus
 
         private async Task Processor_ProcessErrorAsync(ProcessErrorEventArgs args)
         {
+            await Task.Delay(0);
             logger.LogError("Message {MessageId} not handled", args.ErrorSource);
         }
 
         private async Task Processor_ProcessMessageAsync(ProcessSessionMessageEventArgs args)
         {
             //await args.CompleteMessageAsync(args.Message);
-            //return ;
+            //return;
             var json = Encoding.UTF8.GetString(args.Message.Body);
             try
             {
@@ -163,9 +164,20 @@ namespace InvitationCommandService.Application.ServiceBus
         public async Task StartAsync(CancellationToken cancellationToken)
         {
             await _processor.StartProcessingAsync(cancellationToken);
+            await _deadLetterProcessor.StartProcessingAsync(cancellationToken);
         }
-        public async Task StopAsync(CancellationToken cancellationToken) => await _processor.StartProcessingAsync(cancellationToken);
+        public async Task StopAsync(CancellationToken cancellationToken)
+        {
+            //await _processor.StopProcessingAsync(cancellationToken);
+            //await _deadLetterProcessor.StopProcessingAsync(cancellationToken);
+            await _processor.CloseAsync(cancellationToken);
+            await _deadLetterProcessor.CloseAsync(cancellationToken);
+        }
     }
-
+    /*
+     v1 => read 
+    v2 => read - write 
+     
+     */
 
 }

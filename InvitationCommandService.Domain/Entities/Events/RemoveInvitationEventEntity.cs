@@ -1,8 +1,8 @@
 ﻿
 
-using InvitationCommandService.Domain.Entities.Data;
+using InvitationQueryService.Domain.Entities.Data;
 
-namespace InvitationCommandService.Domain.Entities.Events
+namespace InvitationQueryService.Domain.Entities.Events
 {
     public class RemoveInvitationEventEntity : EventEntity<InvitationInfoData>
     {
