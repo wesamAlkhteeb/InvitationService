@@ -44,8 +44,6 @@ namespace InvitationQueryService.Infrastructure.Repository
             await database.SaveChangesAsync();
         }
 
-
-
         public async Task ChangePermissions(ChangePermissionsInvitationQuery changePermissionsInvitationQuery , int subscriptorId)
         {
             
@@ -62,14 +60,6 @@ namespace InvitationQueryService.Infrastructure.Repository
                 changePermissionsInvitationQuery.Data.Info.SubscriptionId,
                 subscriptorId
                 );
-        }
-
-        public async Task<int> GetSequence(int subscriptorAccountId, int subscriptionId)
-        {
-            return await database.Subscriptors
-                .Where(x => x.SubscriptorAccountId == subscriptorAccountId && x.SubscriptionId == subscriptionId)
-                .Select(x => x.Sequence).FirstOrDefaultAsync();
-
         }
 
         public async Task JoinInvitation(JoinInvitationQuery joinInvitationQuery)
@@ -91,11 +81,6 @@ namespace InvitationQueryService.Infrastructure.Repository
                 );
             await database.SaveChangesAsync();
         }
-
-        
-        
-
-
 
         public async Task<SubscriptorEntity?> GetSubscriptor(int subscriptorAccountId, int subscriptionId)
         {

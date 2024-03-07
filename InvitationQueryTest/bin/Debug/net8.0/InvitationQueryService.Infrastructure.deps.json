@@ -676,7 +676,8 @@
       "InvitationQueryService.Application/1.0.0": {
         "dependencies": {
           "InvitationQueryService.Domain": "1.0.0",
-          "MediatR": "12.2.0"
+          "MediatR": "12.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
         },
         "runtime": {
           "InvitationQueryService.Application.dll": {}
