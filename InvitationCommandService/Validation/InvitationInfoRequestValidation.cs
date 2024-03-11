@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using InvitationCommandService;
 
-namespace InvitationQueryService.Presentation.Validation
+namespace InvitationCommandService.Presentation.Validation
 {
     public class InvitationInfoRequestValidation : AbstractValidator<InvitationInfoRequest>
     {

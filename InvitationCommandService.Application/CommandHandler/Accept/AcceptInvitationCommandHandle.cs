@@ -1,17 +1,17 @@
-﻿using InvitationQueryService.Application.Abstraction;
-using InvitationQueryService.Domain.Domain;
-using InvitationQueryService.Domain.Entities.Data;
-using InvitationQueryService.Domain.Entities.Events;
-using InvitationQueryService.Domain.StateInvitation;
+﻿using InvitationCommandService.Application.Abstraction;
+using InvitationCommandService.Domain.Domain;
+using InvitationCommandService.Domain.Entities.Data;
+using InvitationCommandService.Domain.Entities.Events;
+using InvitationCommandService.Domain.StateInvitation;
 using MediatR;
 
-namespace InvitationQueryService.Application.CommandHandler.Accept
+namespace InvitationCommandService.Application.CommandHandler.Accept
 {
     public class AcceptInvitationCommandHandle : IRequestHandler<AcceptInvitationCommand, int>
     {
         private readonly IEventRepository eventRepository;
         private readonly IServiceBusRepository serviceBus;
-
+        
         public AcceptInvitationCommandHandle(IEventRepository eventRepository, IServiceBusRepository serviceBus)
         {
             this.eventRepository = eventRepository;

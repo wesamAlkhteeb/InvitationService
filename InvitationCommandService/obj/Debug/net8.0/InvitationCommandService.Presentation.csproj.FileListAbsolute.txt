@@ -1,86 +1,86 @@
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\appsettings.Development.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\appsettings.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.exe
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.deps.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.runtimeconfig.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.pdb
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Core.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Core.Amqp.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Identity.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\FluentValidation.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Google.Protobuf.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.Core.Api.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.Net.Client.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Grpc.Net.Common.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\MediatR.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\MediatR.Contracts.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\Serilog.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Memory.Data.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Application.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Domain.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Infrastructure.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Application.pdb
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Infrastructure.pdb
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Domain.pdb
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.AssemblyReference.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfoInputs.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfo.cs
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.CoreCompileInputs.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.MvcApplicationPartsAssemblyInfo.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.sourcelink.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets.build.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets.development.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.InvitationCommandService.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.build.InvitationCommandService.Presentation.props
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InvitationCommandService.Presentation.props
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InvitationCommandService.Presentation.props
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\scopedcss\bundle\InvitationCommandService.Presentation.styles.css
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\Invitati.B63D3A13.Up2Date
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\refint\InvitationCommandService.Presentation.dll
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.pdb
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.genruntimeconfig.cache
-D:\Projects\Company\Ecom\DemoInvitation\InvitationCommandService\obj\Debug\net8.0\ref\InvitationCommandService.Presentation.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\appsettings.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.exe
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.deps.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.runtimeconfig.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Presentation.pdb
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\MediatR.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\Serilog.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Application.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Domain.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Infrastructure.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Application.pdb
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Infrastructure.pdb
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\bin\Debug\net8.0\InvitationCommandService.Domain.pdb
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.AssemblyReference.cache
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfoInputs.cache
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.AssemblyInfo.cs
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.sourcelink.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.InvitationCommandService.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.build.InvitationCommandService.Presentation.props
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InvitationCommandService.Presentation.props
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InvitationCommandService.Presentation.props
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\scopedcss\bundle\InvitationCommandService.Presentation.styles.css
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\Invitati.B63D3A13.Up2Date
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\refint\InvitationCommandService.Presentation.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.pdb
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\InvitationCommandService.Presentation.genruntimeconfig.cache
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService\obj\Debug\net8.0\ref\InvitationCommandService.Presentation.dll

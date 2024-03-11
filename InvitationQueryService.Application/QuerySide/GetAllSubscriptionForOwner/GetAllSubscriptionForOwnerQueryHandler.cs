@@ -2,7 +2,7 @@
 using InvitationQueryService.Domain.Entities;
 using MediatR;
 
-namespace InvitationQueryTest.QuerySide.GetAllSubscriptionForOwner
+namespace InvitationQueryService.QuerySide.GetAllSubscriptionForOwner
 {
     public class GetAllSubscriptionForOwnerQueryHandler : IRequestHandler<GetAllSubscriptionForOwnerQuery, List<SubscriptionsEntity>>
     {

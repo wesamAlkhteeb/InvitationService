@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvitationCommandService.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff7bfd546217548a188633f01f43aac3862caf35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a31dc9f88c2ac099d2436fbfb8558493a2d3bfa9")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvitationCommandService.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvitationCommandService.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

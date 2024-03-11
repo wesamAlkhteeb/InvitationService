@@ -1,8 +1,8 @@
 ﻿
 
-using InvitationQueryService.Domain.Entities.Data;
+using InvitationCommandService.Domain.Entities.Data;
 
-namespace InvitationQueryService.Domain.Entities.Events
+namespace InvitationCommandService.Domain.Entities.Events
 {
     public class AcceptInvitationEventEntity : EventEntity<InvitationInfoData>
     {

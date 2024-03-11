@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace InvitationQueryService.Application.CommandHandler.Reject
+namespace InvitationCommandService.Application.CommandHandler.Reject
 {
     public record RejectInvitationCommand(int accountId,
             int subscriptionId,

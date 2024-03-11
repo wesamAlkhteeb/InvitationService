@@ -1,11 +1,11 @@
 ﻿
-using InvitationQueryService.Domain.Entities;
-using InvitationQueryService.Domain.Entities.Data;
-using InvitationQueryService.Domain.Entities.Events;
-using InvitationQueryService.Infrastructure.Configuration;
+using InvitationCommandService.Domain.Entities;
+using InvitationCommandService.Domain.Entities.Data;
+using InvitationCommandService.Domain.Entities.Events;
+using InvitationCommandService.Infrastructure.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace InvitationQueryService.Database
+namespace InvitationCommandService.Database
 {
     public class InvitationDbContext : DbContext
     {

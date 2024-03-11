@@ -1,8 +1,7 @@
 ﻿using Grpc.Core;
-using InvintionCommandTest.Helper;
-using InvitationQueryService;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Infrastructure.Database;
+using InvitationQueryTest.Helper;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit.Abstractions;

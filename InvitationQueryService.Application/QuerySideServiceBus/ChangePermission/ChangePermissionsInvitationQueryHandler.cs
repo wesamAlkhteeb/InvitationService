@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace InvitationQueryService.Application.QuerySideServiceBus.ChangePermission
 {
-    internal class ChangePermissionsInvitationQueryHandler : IRequestHandler<ChangePermissionsInvitationQuery, bool>
+    public class ChangePermissionsInvitationQueryHandler : IRequestHandler<ChangePermissionsInvitationQuery, bool>
     {
         private readonly IInvitationEventsRepository invitationEventsRepository;
         private readonly Logger<ChangePermissionsInvitationQueryHandler> logger;

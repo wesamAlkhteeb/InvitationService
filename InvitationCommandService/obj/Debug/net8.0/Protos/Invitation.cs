@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace InvitationQueryService {
+namespace InvitationCommandService {
 
   /// <summary>Holder for reflection information generated from Protos/Invitation.proto</summary>
   public static partial class InvitationReflection {
@@ -51,10 +51,10 @@ namespace InvitationQueryService {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationQueryService.InvitationRequest), global::InvitationQueryService.InvitationRequest.Parser, new[]{ "InvitationInfo", "Permissions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationQueryService.Permissions), global::InvitationQueryService.Permissions.Parser, new[]{ "Id", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationQueryService.InvitationInfoRequest), global::InvitationQueryService.InvitationInfoRequest.Parser, new[]{ "AccountId", "SubscriptionId", "UserId", "MemberId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationQueryService.Response), global::InvitationQueryService.Response.Parser, new[]{ "Id", "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationCommandService.InvitationRequest), global::InvitationCommandService.InvitationRequest.Parser, new[]{ "InvitationInfo", "Permissions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationCommandService.Permissions), global::InvitationCommandService.Permissions.Parser, new[]{ "Id", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationCommandService.InvitationInfoRequest), global::InvitationCommandService.InvitationInfoRequest.Parser, new[]{ "AccountId", "SubscriptionId", "UserId", "MemberId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::InvitationCommandService.Response), global::InvitationCommandService.Response.Parser, new[]{ "Id", "Message" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,7 +76,7 @@ namespace InvitationQueryService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::InvitationQueryService.InvitationReflection.Descriptor.MessageTypes[0]; }
+      get { return global::InvitationCommandService.InvitationReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -109,10 +109,10 @@ namespace InvitationQueryService {
 
     /// <summary>Field number for the "invitationInfo" field.</summary>
     public const int InvitationInfoFieldNumber = 1;
-    private global::InvitationQueryService.InvitationInfoRequest invitationInfo_;
+    private global::InvitationCommandService.InvitationInfoRequest invitationInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::InvitationQueryService.InvitationInfoRequest InvitationInfo {
+    public global::InvitationCommandService.InvitationInfoRequest InvitationInfo {
       get { return invitationInfo_; }
       set {
         invitationInfo_ = value;
@@ -121,12 +121,12 @@ namespace InvitationQueryService {
 
     /// <summary>Field number for the "Permissions" field.</summary>
     public const int PermissionsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::InvitationQueryService.Permissions> _repeated_permissions_codec
-        = pb::FieldCodec.ForMessage(18, global::InvitationQueryService.Permissions.Parser);
-    private readonly pbc::RepeatedField<global::InvitationQueryService.Permissions> permissions_ = new pbc::RepeatedField<global::InvitationQueryService.Permissions>();
+    private static readonly pb::FieldCodec<global::InvitationCommandService.Permissions> _repeated_permissions_codec
+        = pb::FieldCodec.ForMessage(18, global::InvitationCommandService.Permissions.Parser);
+    private readonly pbc::RepeatedField<global::InvitationCommandService.Permissions> permissions_ = new pbc::RepeatedField<global::InvitationCommandService.Permissions>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::InvitationQueryService.Permissions> Permissions {
+    public pbc::RepeatedField<global::InvitationCommandService.Permissions> Permissions {
       get { return permissions_; }
     }
 
@@ -222,7 +222,7 @@ namespace InvitationQueryService {
       }
       if (other.invitationInfo_ != null) {
         if (invitationInfo_ == null) {
-          InvitationInfo = new global::InvitationQueryService.InvitationInfoRequest();
+          InvitationInfo = new global::InvitationCommandService.InvitationInfoRequest();
         }
         InvitationInfo.MergeFrom(other.InvitationInfo);
       }
@@ -270,7 +270,7 @@ namespace InvitationQueryService {
             break;
           case 10: {
             if (invitationInfo_ == null) {
-              InvitationInfo = new global::InvitationQueryService.InvitationInfoRequest();
+              InvitationInfo = new global::InvitationCommandService.InvitationInfoRequest();
             }
             input.ReadMessage(InvitationInfo);
             break;
@@ -301,7 +301,7 @@ namespace InvitationQueryService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::InvitationQueryService.InvitationReflection.Descriptor.MessageTypes[1]; }
+      get { return global::InvitationCommandService.InvitationReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -528,7 +528,7 @@ namespace InvitationQueryService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::InvitationQueryService.InvitationReflection.Descriptor.MessageTypes[2]; }
+      get { return global::InvitationCommandService.InvitationReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -829,7 +829,7 @@ namespace InvitationQueryService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::InvitationQueryService.InvitationReflection.Descriptor.MessageTypes[3]; }
+      get { return global::InvitationCommandService.InvitationReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

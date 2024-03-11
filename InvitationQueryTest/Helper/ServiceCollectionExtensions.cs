@@ -3,7 +3,7 @@ using InvitationQueryService.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace InvintionCommandTest.Helper
+namespace InvitationQueryTest.Helper
 {
     public static class ServiceCollectionExtensions
     {

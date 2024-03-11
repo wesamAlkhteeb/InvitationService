@@ -1,4 +1,4 @@
-﻿namespace InvitationQueryService.Infrastructure.ServiceBus
+﻿namespace InvitationCommandService.Infrastructure.ServiceBus
 {
     public class AzureOptions
     {

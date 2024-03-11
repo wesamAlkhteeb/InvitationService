@@ -1,4 +1,4 @@
-﻿namespace InvitationQueryService.Domain.Exceptions
+﻿namespace InvitationCommandService.Domain.Exceptions
 {
     public class OperationException : Exception
     {

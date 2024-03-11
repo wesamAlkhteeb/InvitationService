@@ -11,7 +11,9 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Accept
         private readonly IInvitationEventsRepository invitationEventsRepository;
         private readonly ILogger<AcceptInvitationQueryHandler> logger;
 
-        public AcceptInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository, ILogger<AcceptInvitationQueryHandler> logger)
+        public AcceptInvitationQueryHandler(
+                IInvitationEventsRepository invitationEventsRepository, 
+                ILogger<AcceptInvitationQueryHandler> logger)
         {
             this.invitationEventsRepository = invitationEventsRepository;
             this.logger = logger;

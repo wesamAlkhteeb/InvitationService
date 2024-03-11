@@ -1,5 +1,6 @@
 ﻿
 using InvitationQueryService.Domain;
+using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Infrastructure.Database;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,7 +16,7 @@ namespace InvitationQueryTest.Database
             for(int i=2; i<20; i++)
             {
                 database.Subscriptions.AddRange(
-                new InvitationQueryService.Domain.Entities.SubscriptionsEntity
+                new SubscriptionsEntity
                 {
                     AccountId =i
                 }
@@ -27,7 +28,7 @@ namespace InvitationQueryTest.Database
                 for( int j=1; j<20; j++)
                 {
                     database.Subscriptors.Add(
-                        new InvitationQueryService.Domain.Entities.SubscriptorEntity
+                        new SubscriptorEntity
                         {
                             Sequence = counter,
                             SubscriptionId = j,
@@ -38,7 +39,7 @@ namespace InvitationQueryTest.Database
                         });
                         counter++;
                     database.SubscriptionPermissions.Add(
-                        new InvitationQueryService.Domain.Entities.SubscriptorPermissionsEntity
+                        new SubscriptorPermissionsEntity
                         {
                             PermissionId = (j % 2 == 0) ? 1 : 2,
                             SubscriptionId = j,

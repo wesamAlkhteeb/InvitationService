@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "53JkgaQpalWn0WC/3whmlvlHuanZn3hVT/rhH09+oM0ZIpg7fAWuHn3bmm13CVw82W+Li1MKeMEVEUnTtjRPPg==",
+  "dgSpecHash": "/XF4c1ydDnvG1VLb0RP5Be3IBu7n3TJy0qqVTV37bi8xNco/gd9z67jNMPLVJV6qYHeowB+7OYP5Dlz3ErG63g==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wesam\\.nuget\\packages\\azure.core\\1.37.0\\azure.core.1.37.0.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\azure.core.amqp\\1.3.0\\azure.core.amqp.1.3.0.nupkg.sha512",

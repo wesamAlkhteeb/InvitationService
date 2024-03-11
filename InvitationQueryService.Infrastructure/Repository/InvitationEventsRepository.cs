@@ -14,7 +14,7 @@ using InvitationQueryService.Domain.Models;
 using InvitationQueryService.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 
-namespace InvitationQueryService.Infrastructure.Repository
+namespace InvitationCommandService.Infrastructure.Repository
 {
     public class InvitationEventsRepository : IInvitationEventsRepository
     {

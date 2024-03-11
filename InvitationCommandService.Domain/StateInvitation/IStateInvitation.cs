@@ -1,4 +1,4 @@
-﻿namespace InvitationQueryService.Domain.StateInvitation
+﻿namespace InvitationCommandService.Domain.StateInvitation
 {
     public interface IStateInvitation
     {

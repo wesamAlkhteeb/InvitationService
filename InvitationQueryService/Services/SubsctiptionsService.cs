@@ -1,13 +1,14 @@
 ﻿using Grpc.Core;
+using InvitationQueryService;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Models.Response;
 using InvitationQueryService.Presentation.Exceptions;
-using InvitationQueryTest.QuerySide.GetAllSubscriptionForOwner;
-using InvitationQueryTest.QuerySide.GetAllSubscriptionForSubscriptor;
-using InvitationQueryTest.QuerySide.GetAllSubscriptor;
+using InvitationQueryService.QuerySide.GetAllSubscriptionForOwner;
+using InvitationQueryService.QuerySide.GetAllSubscriptionForSubscriptor;
+using InvitationQueryService.QuerySide.GetAllSubscriptor;
 using MediatR;
 
-namespace InvitationQueryService.Presentation.Services
+namespace InvitationCommandService.Presentation.Services
 {
     public class SubsctiptionsService : Subscriptions.SubscriptionsBase
     {

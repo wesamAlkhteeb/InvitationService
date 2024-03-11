@@ -1,7 +1,7 @@
-﻿using InvitationQueryService.Domain.Model;
+﻿using InvitationCommandService.Domain.Model;
 using MediatR;
 
-namespace InvitationQueryService.Application.CommandHandler.Send
+namespace InvitationCommandService.Application.CommandHandler.Send
 {
     public record SendInvitationCommand(int accountId,
             int subscriptionId,

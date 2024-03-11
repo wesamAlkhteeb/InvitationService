@@ -1,6 +1,6 @@
 ﻿using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Models.Response;
-using InvitationQueryTest.QuerySide.GetAllSubscriptionForSubscriptor;
+using InvitationQueryService.QuerySide.GetAllSubscriptionForSubscriptor;
 using System;
 using System.Collections.Generic;
 using System.Linq;

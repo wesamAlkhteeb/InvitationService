@@ -3,7 +3,7 @@ using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Models.Response;
 using MediatR;
 
-namespace InvitationQueryTest.QuerySide.GetAllSubscriptor
+namespace InvitationQueryService.QuerySide.GetAllSubscriptor
 {
     public class GetAllSubscriptorsInSubscriptionQueryHandler : IRequestHandler<GetAllSubscriptorQuery, List<UsersInSubscriptionResponseModel>>
     {

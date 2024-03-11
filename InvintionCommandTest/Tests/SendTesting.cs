@@ -2,8 +2,8 @@
 using InvintionCommandTest.Database;
 using InvintionCommandTest.Helper;
 using InvitationCommandTest;
-using InvitationQueryService.Database;
-using InvitationQueryService.Domain.Entities.Events;
+using InvitationCommandService.Database;
+using InvitationCommandService.Domain.Entities.Events;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;

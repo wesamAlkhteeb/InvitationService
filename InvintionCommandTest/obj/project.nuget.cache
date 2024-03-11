@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dK7y9f2hLKEdyG59yB1IuuuBN3vXdksKRXLf5+XZcAF19Mkh5ph8n2yIZzwxheikDKeHAl4232kmXajurxGE3A==",
+  "dgSpecHash": "UpQbfAxjicbDUg9NP/FKqDyukqCO83F+0uv7UvDK6OIvaaEVJnfhukDKBfrkmCeOl37ZWHN09W0BlncElxBqIQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvintionCommandTest\\InvintionCommandTest.csproj",
+  "projectFilePath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\InvintionCommandTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wesam\\.nuget\\packages\\azure.core\\1.37.0\\azure.core.1.37.0.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\azure.core.amqp\\1.3.0\\azure.core.amqp.1.3.0.nupkg.sha512",

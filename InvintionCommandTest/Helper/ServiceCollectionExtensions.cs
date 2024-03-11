@@ -1,6 +1,6 @@
 ﻿using Azure.Messaging.ServiceBus;
-using InvitationQueryService.Database;
-using InvitationQueryService.Infrastructure.ServiceBus;
+using InvitationCommandService.Database;
+using InvitationCommandService.Infrastructure.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 

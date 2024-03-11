@@ -1,8 +1,8 @@
-﻿using InvitationQueryService.Domain.Entities;
+﻿using InvitationCommandService.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace InvitationQueryService.Infrastructure.Configuration
+namespace InvitationCommandService.Infrastructure.Configuration
 {
     public class OutboxMessageConfigurations : IEntityTypeConfiguration<OutboxMessageEntity>
     {

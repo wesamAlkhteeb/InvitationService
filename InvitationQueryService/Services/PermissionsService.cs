@@ -3,10 +3,10 @@ using InvitationQueryService;
 using InvitationQueryService.Application.QuerySide.CheckPermission;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Presentation.Exceptions;
-using InvitationQueryTest.QuerySide.GetAllPermissions;
+using InvitationQueryService.QuerySide.GetAllPermissions;
 using MediatR;
 
-namespace InvitationQueryService.Presentation.Services
+namespace InvitationCommandService.Presentation.Services
 {
     public class PermissionsService:Permissions.PermissionsBase
     {

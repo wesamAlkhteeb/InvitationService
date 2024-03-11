@@ -2932,11 +2932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
       "projectName": "InvitationCommandService.Infrastructure",
-      "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Infrastructure\\InvitationCommandService.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2957,8 +2957,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj": {
-              "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj"
+            "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj": {
+              "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Application\\InvitationCommandService.Application.csproj"
             }
           }
         }

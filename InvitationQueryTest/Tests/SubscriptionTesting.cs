@@ -1,17 +1,10 @@
 ﻿using Grpc.Core;
-using InvintionCommandTest.Helper;
-using InvitationQueryService;
 using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Infrastructure.Database;
-using InvitationQueryTest.Database;
+using InvitationQueryTest.Helper;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit.Abstractions;
 
 namespace InvitationQueryTest.Tests

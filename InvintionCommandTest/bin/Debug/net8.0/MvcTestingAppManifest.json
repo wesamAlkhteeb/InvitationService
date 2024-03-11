@@ -1,6 +1,6 @@
 {
-  "InvitationCommandService.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Application",
-  "InvitationCommandService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Domain",
-  "InvitationCommandService.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService.Infrastructure",
-  "InvitationCommandService.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationCommandService"
+  "InvitationCommandService.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Application",
+  "InvitationCommandService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Domain",
+  "InvitationCommandService.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Infrastructure",
+  "InvitationCommandService.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService"
 }

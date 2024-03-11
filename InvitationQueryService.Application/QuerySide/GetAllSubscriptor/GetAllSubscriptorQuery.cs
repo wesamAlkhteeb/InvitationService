@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InvitationQueryTest.QuerySide.GetAllSubscriptor
+namespace InvitationQueryService.QuerySide.GetAllSubscriptor
 {
     public record GetAllSubscriptorQuery(int page , int subscriptionId) : IRequest<List<UsersInSubscriptionResponseModel>>;
 

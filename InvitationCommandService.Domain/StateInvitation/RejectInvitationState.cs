@@ -1,6 +1,6 @@
-﻿using InvitationQueryService.Domain.Exceptions;
+﻿using InvitationCommandService.Domain.Exceptions;
 
-namespace InvitationQueryService.Domain.StateInvitation
+namespace InvitationCommandService.Domain.StateInvitation
 {
     public class RejectInvitationState : IStateInvitation
     {

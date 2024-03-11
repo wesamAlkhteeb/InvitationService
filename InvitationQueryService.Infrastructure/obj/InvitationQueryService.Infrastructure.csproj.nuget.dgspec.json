@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj": {}
+    "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj": {
+    "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj",
+        "projectUniqueName": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj",
         "projectName": "InvitationQueryService.Application",
-        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj",
+        "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj",
         "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Application\\obj\\",
+        "outputPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj": {
-                "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj"
+              "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj": {
+                "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj": {
+    "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj",
         "projectName": "InvitationQueryService.Domain",
-        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj",
+        "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj",
         "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Domain\\obj\\",
+        "outputPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -152,14 +152,14 @@
         }
       }
     },
-    "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj": {
+    "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj",
         "projectName": "InvitationQueryService.Infrastructure",
-        "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -180,8 +180,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj": {
-                "projectPath": "D:\\Projects\\Company\\Ecom\\DemoInvitation\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj"
+              "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj": {
+                "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj"
               }
             }
           }
@@ -220,6 +220,10 @@
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [

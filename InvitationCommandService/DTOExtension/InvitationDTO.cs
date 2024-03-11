@@ -1,18 +1,20 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using InvitationQueryService.Application.CommandHandler.Accept;
-using InvitationQueryService.Application.CommandHandler.Cancel;
-using InvitationQueryService.Application.CommandHandler.ChangePermissions;
-using InvitationQueryService.Application.CommandHandler.Join;
-using InvitationQueryService.Application.CommandHandler.Leave;
-using InvitationQueryService.Application.CommandHandler.Reject;
-using InvitationQueryService.Application.CommandHandler.Remove;
-using InvitationQueryService.Application.CommandHandler.Send;
-using InvitationQueryService.Domain.Model;
-using InvitationQueryService.Presentation.Validation;
+using InvitationCommandService;
+using InvitationCommandService.Application.CommandHandler.Accept;
+using InvitationCommandService.Application.CommandHandler.Cancel;
+using InvitationCommandService.Application.CommandHandler.ChangePermissions;
+using InvitationCommandService.Application.CommandHandler.Join;
+using InvitationCommandService.Application.CommandHandler.Leave;
+using InvitationCommandService.Application.CommandHandler.Reject;
+using InvitationCommandService.Application.CommandHandler.Remove;
+using InvitationCommandService.Application.CommandHandler.Send;
+using InvitationCommandService.Domain.Model;
+using InvitationCommandService.Presentation.Validation;
 
 
-namespace InvitationQueryService.Presentation.DTOExtension
+
+namespace InvitationCommandService.Presentation.DTOExtension
 {
     public static class InvitationDTO
     {

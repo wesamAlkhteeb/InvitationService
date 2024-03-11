@@ -1,11 +1,11 @@
-﻿using InvitationQueryService.Application.Abstraction;
-using InvitationQueryService.Domain.Domain;
-using InvitationQueryService.Domain.Entities.Data;
-using InvitationQueryService.Domain.Entities.Events;
-using InvitationQueryService.Domain.StateInvitation;
+﻿using InvitationCommandService.Application.Abstraction;
+using InvitationCommandService.Domain.Domain;
+using InvitationCommandService.Domain.Entities.Data;
+using InvitationCommandService.Domain.Entities.Events;
+using InvitationCommandService.Domain.StateInvitation;
 using MediatR;
 
-namespace InvitationQueryService.Application.CommandHandler.Send
+namespace InvitationCommandService.Application.CommandHandler.Send
 {
     public class SendInvitationCommandHandler(IEventRepository eventRepository, IServiceBusRepository serviceBus) : IRequestHandler<SendInvitationCommand, int>
     {
@@ -19,6 +19,12 @@ namespace InvitationQueryService.Application.CommandHandler.Send
             EventEntity? eventEntity = await eventRepository.GetLastEventByAggregateId(aggregate.AggregateId);
             aggregate.loadEvent(eventEntity);
             aggregate.CanDoEvent();
+            /*
+              state : SendState() // WA
+                event : Accept()
+
+             */
+
             SendInvitationEventEntity @event = new SendInvitationEventEntity
             {
                 AggregateId = aggregate.AggregateId,

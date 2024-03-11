@@ -1,0 +1,7 @@
+﻿System.AggregateException: 'Some services are not able to be constructed (Error while validating the service descriptor '
+
+
+ServiceType: 
+	MediatR.IRequestHandler`2[InvitationQueryService.Application.QuerySideServiceBus.ChangePermission.ChangePermissionsInvitationQuery,System.Boolean]
+	Lifetime: Transient ImplementationType: InvitationQueryService.Application.QuerySideServiceBus.ChangePermission.ChangePermissionsInvitationQueryHandler': 
+	Unable to resolve service for type 'Microsoft.Extensions.Logging.Logger`1[InvitationQueryService.Application.QuerySideServiceBus.ChangePermission.ChangePermissionsInvitationQueryHandler]' while attempting to activate 'InvitationQueryService.Application.QuerySideServiceBus.ChangePermission.ChangePermissionsInvitationQueryHandler'.)'

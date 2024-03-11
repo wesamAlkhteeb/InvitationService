@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace InvitationQueryService.Application.CommandHandler.Leave
+namespace InvitationCommandService.Application.CommandHandler.Leave
 {
     public record LeaveInvitationCommand(int accountId,
             int subscriptionId,

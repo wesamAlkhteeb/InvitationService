@@ -1,4 +1,4 @@
-﻿namespace InvitationQueryService.Domain.Entities.Data
+﻿namespace InvitationCommandService.Domain.Entities.Data
 {
 
     public class InvitationInfoData

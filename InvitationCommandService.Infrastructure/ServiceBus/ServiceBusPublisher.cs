@@ -1,11 +1,11 @@
 ﻿using Azure.Messaging.ServiceBus;
-using InvitationQueryService.Database;
-using InvitationQueryService.Infrastructure.ServiceBus;
+using InvitationCommandService.Database;
+using InvitationCommandService.Infrastructure.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
 
-namespace InvitationQueryService.Application.ServiceBus
+namespace InvitationCommandService.Application.ServiceBus
 {
     public class ServiceBusPublisher
     {

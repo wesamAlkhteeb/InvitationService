@@ -4,14 +4,8 @@ using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Models.Response;
 using InvitationQueryService.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace InvitationQueryService.Infrastructure.Repository
+namespace InvitationCommandService.Infrastructure.Repository
 {
     public class SubscriptorRepository : ISubscriptorRepository
     {

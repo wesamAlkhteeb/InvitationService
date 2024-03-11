@@ -1,4 +1,4 @@
-﻿using InvitationQueryService.Database;
+﻿using InvitationCommandService.Database;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 

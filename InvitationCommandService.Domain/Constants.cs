@@ -1,4 +1,4 @@
-﻿namespace InvitationQueryService.Domain
+﻿namespace InvitationCommandService.Domain
 {
     //public enum Subscriptions
     //{

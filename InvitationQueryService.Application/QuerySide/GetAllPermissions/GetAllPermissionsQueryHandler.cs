@@ -2,7 +2,7 @@
 using InvitationQueryService.Domain.Entities;
 using MediatR;
 
-namespace InvitationQueryTest.QuerySide.GetAllPermissions
+namespace InvitationQueryService.QuerySide.GetAllPermissions
 {
     public class GetAllPermissionsQueryHandler : IRequestHandler<GetAllPermissionsQuery, List<PermissionEntity>>
     {

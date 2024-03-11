@@ -1,11 +1,11 @@
-using InvitationQueryService.Application.Abstraction;
-using InvitationQueryService.Application.CommandHandler.Send;
-using InvitationQueryService.Application.ServiceBus;
-using InvitationQueryService.Database;
-using InvitationQueryService.Infrastructure.Repository;
-using InvitationQueryService.Infrastructure.ServiceBus;
-using InvitationQueryService.Presentation.Interceptors;
-using InvitationQueryService.Services;
+using InvitationCommandService.Application.Abstraction;
+using InvitationCommandService.Application.CommandHandler.Send;
+using InvitationCommandService.Application.ServiceBus;
+using InvitationCommandService.Database;
+using InvitationCommandService.Infrastructure.Repository;
+using InvitationCommandService.Infrastructure.ServiceBus;
+using InvitationCommandService.Presentation.Interceptors;
+using InvitationCommandService.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

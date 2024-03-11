@@ -7,7 +7,7 @@ using Serilog;
 using Serilog.Events;
 using Xunit.Abstractions;
 
-namespace InvintionCommandTest.Helper
+namespace InvitationQueryTest.Helper
 {
     public static class WebApplicationExtensions
     {

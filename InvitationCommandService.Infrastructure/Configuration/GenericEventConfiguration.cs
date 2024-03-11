@@ -1,10 +1,10 @@
-﻿using InvitationQueryService.Domain.Entities.Events;
+﻿using InvitationCommandService.Domain.Entities.Events;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace InvitationQueryService.Infrastructure.Configuration
+namespace InvitationCommandService.Infrastructure.Configuration
 {
     public class GenericEventConfiguration<TEntity, TData> : IEntityTypeConfiguration<TEntity>
             where TEntity : EventEntity<TData>

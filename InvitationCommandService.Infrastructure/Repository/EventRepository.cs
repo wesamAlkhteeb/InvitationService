@@ -1,10 +1,10 @@
-﻿using InvitationQueryService.Application.Abstraction;
-using InvitationQueryService.Database;
-using InvitationQueryService.Domain.Entities;
-using InvitationQueryService.Domain.Entities.Events;
+﻿using InvitationCommandService.Application.Abstraction;
+using InvitationCommandService.Database;
+using InvitationCommandService.Domain.Entities;
+using InvitationCommandService.Domain.Entities.Events;
 using Microsoft.EntityFrameworkCore;
 
-namespace InvitationQueryService.Infrastructure.Repository
+namespace InvitationCommandService.Infrastructure.Repository
 {
     public class EventRepository : IEventRepository
     {

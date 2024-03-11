@@ -1,7 +1,7 @@
-﻿using InvitationQueryService.Domain.Model;
+﻿using InvitationCommandService.Domain.Model;
 using MediatR;
 
-namespace InvitationQueryService.Application.CommandHandler.ChangePermissions
+namespace InvitationCommandService.Application.CommandHandler.ChangePermissions
 {
     public record ChangePermissionInvitationCommand(int accountId,
             int subscriptionId,
