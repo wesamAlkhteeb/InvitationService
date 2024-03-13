@@ -9,12 +9,11 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Cancel
     public class CancelInvitationQueryHandler : IRequestHandler<CancelInvitationQuery, bool>
     {
         private readonly IInvitationEventsRepository invitationEventsRepository;
-        private readonly ILogger<CancelInvitationQueryHandler> logger;
 
-        public CancelInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository,ILogger<CancelInvitationQueryHandler> logger)
+        public CancelInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository)
         {
             this.invitationEventsRepository = invitationEventsRepository;
-            this.logger = logger;
+            
         }
         public async Task<bool> Handle(CancelInvitationQuery request, CancellationToken cancellationToken)
         {
@@ -23,10 +22,9 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Cancel
 
             if (subscriptor == null)
             {
-                logger.LogWarning("I don't have send event record in database and receive accept Event");
                 return false;
             }
-            else if (subscriptor.Sequence == request.Sequence)
+            else if (subscriptor.Sequence + 1 == request.Sequence)
             {
                 subscriptor.Status = InvitationState.Out.ToString();
                 subscriptor.Sequence = request.Sequence;
@@ -35,7 +33,6 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Cancel
             }
             else if (subscriptor.Sequence + 1 < request.Sequence) return false;
             else if (subscriptor.Sequence + 1 > request.Sequence) return true;
-            logger.LogWarning("there are handle error");
             return false;
         }
     }

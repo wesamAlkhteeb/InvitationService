@@ -11,7 +11,9 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Leave
         private readonly IInvitationEventsRepository invitationEventsRepository;
         private readonly ILogger<LeaveInvitationQueryHandler> logger;
 
-        public LeaveInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository , ILogger<LeaveInvitationQueryHandler> logger)
+        public LeaveInvitationQueryHandler(
+            IInvitationEventsRepository invitationEventsRepository,
+            ILogger<LeaveInvitationQueryHandler> logger)
         {
             this.invitationEventsRepository = invitationEventsRepository;
             this.logger = logger;
@@ -26,7 +28,7 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Leave
                 logger.LogWarning("I don't have send event record in database and receive accept Event");
                 return false;
             }
-            else if (subscriptor.Sequence == request.Sequence)
+            else if (subscriptor.Sequence + 1 == request.Sequence)
             {
                 subscriptor.Status = InvitationState.Out.ToString();
                 subscriptor.Sequence = request.Sequence;
@@ -36,6 +38,7 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Leave
             else if (subscriptor.Sequence + 1 < request.Sequence) return false;
             else if (subscriptor.Sequence + 1 > request.Sequence) return true;
             logger.LogWarning("there are handle error");
+
             return false;
         }
     }

@@ -9,12 +9,10 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.ChangePermissio
     public class ChangePermissionsInvitationQueryHandler : IRequestHandler<ChangePermissionsInvitationQuery, bool>
     {
         private readonly IInvitationEventsRepository invitationEventsRepository;
-        private readonly Logger<ChangePermissionsInvitationQueryHandler> logger;
-
-        public ChangePermissionsInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository,Logger<ChangePermissionsInvitationQueryHandler> logger)
+        
+        public ChangePermissionsInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository)
         {
             this.invitationEventsRepository = invitationEventsRepository;
-            this.logger = logger;
         }
         public async Task<bool> Handle(ChangePermissionsInvitationQuery request, CancellationToken cancellationToken)
         {
@@ -23,10 +21,9 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.ChangePermissio
 
             if (subscriptor == null)
             {
-                logger.LogWarning("I don't have send event record in database and receive accept Event");
                 return false;
             }
-            else if (subscriptor.Sequence == request.Sequence)
+            else if (subscriptor.Sequence + 1 == request.Sequence)
             {
                 await invitationEventsRepository.ChangePermissions(request, subscriptor.Id);
                 subscriptor.Sequence = request.Sequence;
@@ -35,7 +32,6 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.ChangePermissio
             }
             else if (subscriptor.Sequence + 1 < request.Sequence) return false;
             else if (subscriptor.Sequence + 1 > request.Sequence) return true;
-            logger.LogWarning("there are handle error");
             return false;
         }
     }

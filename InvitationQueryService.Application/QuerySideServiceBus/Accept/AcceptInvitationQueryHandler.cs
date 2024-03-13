@@ -9,14 +9,13 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Accept
     public class AcceptInvitationQueryHandler : IRequestHandler<AcceptInvitationQuery, bool>
     {
         private readonly IInvitationEventsRepository invitationEventsRepository;
-        private readonly ILogger<AcceptInvitationQueryHandler> logger;
+        
 
         public AcceptInvitationQueryHandler(
-                IInvitationEventsRepository invitationEventsRepository, 
-                ILogger<AcceptInvitationQueryHandler> logger)
+                IInvitationEventsRepository invitationEventsRepository)
         {
             this.invitationEventsRepository = invitationEventsRepository;
-            this.logger = logger;
+        
         }
         public async Task<bool> Handle(AcceptInvitationQuery request, CancellationToken cancellationToken)
         {
@@ -25,10 +24,10 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Accept
 
             if (subscriptor == null)
             {
-                logger.LogWarning("I don't have send event record in database and receive accept Event");
+                
                 return false;
             }
-            else if (subscriptor.Sequence == request.Sequence)
+            else if (subscriptor.Sequence + 1 == request.Sequence)
             {
                 subscriptor.Status = InvitationState.Joined.ToString();
                 subscriptor.Sequence = request.Sequence;
@@ -37,7 +36,7 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Accept
             }
             else if (subscriptor.Sequence + 1 < request.Sequence) return false;
             else if (subscriptor.Sequence + 1 > request.Sequence) return true;
-            logger.LogWarning("there are handle error");
+            
             return false;
         }
     }

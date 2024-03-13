@@ -9,13 +9,10 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Send
     public class SendInvitationQueryHandler : IRequestHandler<SendInvitationQuery, bool>
     {
         private readonly IInvitationEventsRepository invitationEventsRepository;
-        private readonly ILogger<SendInvitationQueryHandler> logger;
 
-        public SendInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository, 
-            ILogger<SendInvitationQueryHandler> logger)
+        public SendInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository)
         {
             this.invitationEventsRepository = invitationEventsRepository;
-            this.logger = logger;
         }
         public async Task<bool> Handle(SendInvitationQuery request, CancellationToken cancellationToken)
         {
@@ -27,7 +24,7 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Send
                 await invitationEventsRepository.SendInvitation(request);
                 return true;
             }
-            else if (subscriptor.Sequence == request.Sequence)
+            else if (subscriptor.Sequence + 1 == request.Sequence)
             {
                 subscriptor.Status = InvitationState.Pending.ToString();
                 subscriptor.Sequence = request.Sequence;
@@ -36,7 +33,6 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Send
             }
             else if (subscriptor.Sequence + 1 < request.Sequence) return false;
             else if (subscriptor.Sequence + 1 > request.Sequence) return true;
-            logger.LogWarning("there are handle error");
             return false;
         }
     }

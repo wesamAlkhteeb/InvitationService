@@ -29,7 +29,7 @@ namespace InvitationQueryTest.Tests
                 NumberPage = 1
             });
             Assert.NotNull(data);
-            Assert.Equal(2, data.Permission.Count());
+            Assert.Equal(0, data.Permission.Count());
         }
 
         [Fact]

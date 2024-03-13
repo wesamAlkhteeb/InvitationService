@@ -22,7 +22,7 @@ namespace InvintionCommandTest.Tests
             _factory = factory.WithDefaultConfigurations(helper, services =>
             {
                 services.ReplaceWithInMemoryDatabase();
-                //services.RejectServiceBus();
+                services.RejectServiceBus();
             });
         }
 
@@ -129,7 +129,7 @@ namespace InvintionCommandTest.Tests
 
         // send invite and then need some time to response memper (accept | reject)
         [Fact]
-        public async Task SendNewInvitation_Pinding_Exception()
+        public async Task SendNewInvitation_Pending_Exception()
         {
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
             

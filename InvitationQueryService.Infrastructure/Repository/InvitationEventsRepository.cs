@@ -60,6 +60,7 @@ namespace InvitationCommandService.Infrastructure.Repository
                 changePermissionsInvitationQuery.Data.Info.SubscriptionId,
                 subscriptorId
                 );
+            await database.SaveChangesAsync();
         }
 
         public async Task JoinInvitation(JoinInvitationQuery joinInvitationQuery)

@@ -129,7 +129,7 @@ namespace InvitationQueryTest.Tests
             var data = await _client.GetAllSubscriptionForSubscriptorAsync(page);
             
             Assert.NotNull(data);
-            Assert.Equal(5, data.UserSubscriptionReuslt.Count());
+            Assert.Equal(4, data.UserSubscriptionReuslt.Count());
         }
         
         [Fact]

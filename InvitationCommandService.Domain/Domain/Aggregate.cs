@@ -93,9 +93,6 @@ namespace InvitationCommandService.Domain.Domain
                 }
             }
         }
-
-
-
     }
 
 }

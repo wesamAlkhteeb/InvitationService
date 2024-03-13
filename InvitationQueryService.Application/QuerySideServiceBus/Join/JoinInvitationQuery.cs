@@ -8,7 +8,7 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Join
         public int Id { get; set; }
         public string AggregateId { get; set; }
         public int Sequence { get; set; }
-        public DateTime dateTime { get; set; }
+        public DateTime DateTime { get; set; }
         public DataInfoModel Data { get; set; }
     }
 }

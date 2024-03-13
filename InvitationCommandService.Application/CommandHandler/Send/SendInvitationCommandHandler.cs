@@ -19,12 +19,7 @@ namespace InvitationCommandService.Application.CommandHandler.Send
             EventEntity? eventEntity = await eventRepository.GetLastEventByAggregateId(aggregate.AggregateId);
             aggregate.loadEvent(eventEntity);
             aggregate.CanDoEvent();
-            /*
-              state : SendState() // WA
-                event : Accept()
-
-             */
-
+            
             SendInvitationEventEntity @event = new SendInvitationEventEntity
             {
                 AggregateId = aggregate.AggregateId,

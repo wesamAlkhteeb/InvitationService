@@ -359,6 +359,14 @@ C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debu
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\Serilog.Sinks.XUnit.dll
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryTest\bin\Debug\net8.0\System.Drawing.Common.dll

@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F66AB148-64B6-4503-92A0-113A7BAAD348}|InvitationQueryService\\InvitationQueryService.Presentation.csproj|c:\\users\\wesam\\desktop\\new folder\\invitationservice\\invitationqueryservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F66AB148-64B6-4503-92A0-113A7BAAD348}|InvitationQueryService\\InvitationQueryService.Presentation.csproj|solutionrelative:invitationqueryservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2631CAD8-9942-4E55-A6C1-ADDEC42BC815}|InvitationQueryService.Application\\InvitationQueryService.Application.csproj|c:\\users\\wesam\\desktop\\new folder\\invitationservice\\invitationqueryservice.application\\querysideservicebus\\accept\\acceptinvitationqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2631CAD8-9942-4E55-A6C1-ADDEC42BC815}|InvitationQueryService.Application\\InvitationQueryService.Application.csproj|solutionrelative:invitationqueryservice.application\\querysideservicebus\\accept\\acceptinvitationqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService\\Program.cs",
-              "RelativeDocumentMoniker": "InvitationQueryService\\Program.cs",
-              "ToolTip": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService\\Program.cs",
-              "RelativeToolTip": "InvitationQueryService\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAuwCEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T11:16:27.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AcceptInvitationQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\QuerySideServiceBus\\Accept\\AcceptInvitationQueryHandler.cs",
-              "RelativeDocumentMoniker": "InvitationQueryService.Application\\QuerySideServiceBus\\Accept\\AcceptInvitationQueryHandler.cs",
-              "ToolTip": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\QuerySideServiceBus\\Accept\\AcceptInvitationQueryHandler.cs",
-              "RelativeToolTip": "InvitationQueryService.Application\\QuerySideServiceBus\\Accept\\AcceptInvitationQueryHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBEAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T11:12:48.372Z",
-              "EditorCaption": ""
             }
           ]
         },

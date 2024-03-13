@@ -9,12 +9,10 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Remove
     public class RemoveInvitationQueryHandler : IRequestHandler<RemoveInvitationQuery, bool>
     {
         private readonly IInvitationEventsRepository invitationEventsRepository;
-        private readonly ILogger<RemoveInvitationQueryHandler> logger;
 
-        public RemoveInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository,ILogger<RemoveInvitationQueryHandler> logger)
+        public RemoveInvitationQueryHandler(IInvitationEventsRepository invitationEventsRepository)
         {
             this.invitationEventsRepository = invitationEventsRepository;
-            this.logger = logger;
         }
         public async Task<bool> Handle(RemoveInvitationQuery request, CancellationToken cancellationToken)
         {
@@ -23,10 +21,9 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Remove
 
             if (subscriptor == null)
             {
-                logger.LogWarning("I don't have send event record in database and receive accept Event");
                 return false;
             }
-            else if (subscriptor.Sequence == request.Sequence)
+            else if (subscriptor.Sequence + 1 == request.Sequence)
             {
                 subscriptor.Status = InvitationState.Out.ToString();
                 subscriptor.Sequence = request.Sequence;
@@ -35,7 +32,6 @@ namespace InvitationQueryService.Application.QuerySideServiceBus.Remove
             }
             else if (subscriptor.Sequence + 1 < request.Sequence) return false;
             else if (subscriptor.Sequence + 1 > request.Sequence) return true;
-            logger.LogWarning("there are handle error");
             return false;
         }
     }
