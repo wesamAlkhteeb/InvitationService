@@ -1,6 +1,8 @@
 ﻿using Grpc.Core;
 using InvintionCommandTest.Database;
+using InvintionCommandTest.Faker;
 using InvintionCommandTest.Helper;
+using InvitationCommandService.Domain;
 using InvitationCommandTest;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit.Abstractions;
@@ -26,23 +28,10 @@ namespace InvintionCommandTest.Tests
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
-            invitationRequest.InvitationInfo = new InvitationInfoRequest()
-            {
-                AccountId = 2,
-                UserId = 2,
-                MemberId = 3,
-                SubscriptionId = 1
-            };
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 1,
-                Name = "Transfer"
-            });
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 2,
-                Name = "PurchaseCards"
-            });
+            invitationRequest.InvitationInfo = new GenerateInvitationInfoRequest().Generate();
+            invitationRequest.Permissions.Add(new GeneratePermission(1).Generate());
+            invitationRequest.Permissions.Add(new GeneratePermission(2).Generate());
+
             await client.JoinMemberByAdminAsync(invitationRequest);
             DatabaseHelper.CheckEvent(_factory, "JoinEvent", 1);
             invitationRequest.Permissions.RemoveAt(0); 
@@ -58,29 +47,16 @@ namespace InvintionCommandTest.Tests
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
-            invitationRequest.InvitationInfo = new InvitationInfoRequest()
-            {
-                AccountId = 2,
-                UserId = 2,
-                MemberId = 3,
-                SubscriptionId = 1
-            };
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 1,
-                Name = "Transfer"
-            });
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 2,
-                Name = "PurchaseCards"
-            });
+            invitationRequest.InvitationInfo = new GenerateInvitationInfoRequest().Generate();
+            invitationRequest.Permissions.Add(new GeneratePermission(1).Generate());
+            invitationRequest.Permissions.Add(new GeneratePermission(2).Generate());
+
             await client.JoinMemberByAdminAsync(invitationRequest);
-            DatabaseHelper.CheckEvent(_factory, "JoinEvent", 1);
+            DatabaseHelper.CheckEvent(_factory, EventType.JoinEvent.ToString(), 1);
             invitationRequest.Permissions[0].Id = 4;
             invitationRequest.Permissions[0].Id = 5;
             var response = await client.ChangePermissionsAsync(invitationRequest);
-            DatabaseHelper.CheckEvent(_factory, "ChangePermissionEvent", 2);
+            DatabaseHelper.CheckEvent(_factory, EventType.ChangePermissionEvent.ToString(), 2);
             Assert.NotNull(response);
         }
 
@@ -90,25 +66,12 @@ namespace InvintionCommandTest.Tests
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
-            invitationRequest.InvitationInfo = new InvitationInfoRequest()
-            {
-                AccountId = 2,
-                UserId = 2,
-                MemberId = 3,
-                SubscriptionId = 1
-            };
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 1,
-                Name = "Transfer"
-            });
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 2,
-                Name = "PurchaseCards"
-            });
+            invitationRequest.InvitationInfo = new GenerateInvitationInfoRequest().Generate();
+            invitationRequest.Permissions.Add(new GeneratePermission(1).Generate());
+            invitationRequest.Permissions.Add(new GeneratePermission(2).Generate());
+
             await client.JoinMemberByAdminAsync(invitationRequest);
-            DatabaseHelper.CheckEvent(_factory, "JoinEvent", 1);
+            DatabaseHelper.CheckEvent(_factory, EventType.JoinEvent.ToString(), 1);
 
             var exception = await Assert.ThrowsAsync<RpcException>(async () =>
             {

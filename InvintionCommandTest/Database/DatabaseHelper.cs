@@ -13,7 +13,7 @@ namespace InvintionCommandTest.Database
 
             var scope = factory.Services.CreateScope();
             var database = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
-            var @event = database.Events.Where(@event => @event.Type == nameEvent).First();
+            var @event = database.Events.Where(@event => @event.Type == nameEvent).Last();
             Assert.NotNull(@event);
             Assert.Equal(sequence, @event.Sequence);
 

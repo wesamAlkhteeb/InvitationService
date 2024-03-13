@@ -471,3 +471,4 @@ C:\Users\wesam\Desktop\New folder\InvitationService\InvintionCommandTest\obj\Deb
 C:\Users\wesam\Desktop\New folder\InvitationService\InvintionCommandTest\obj\Debug\net8.0\InvintionCommandTest.pdb
 C:\Users\wesam\Desktop\New folder\InvitationService\InvintionCommandTest\obj\Debug\net8.0\InvintionCommandTest.genruntimeconfig.cache
 C:\Users\wesam\Desktop\New folder\InvitationService\InvintionCommandTest\obj\Debug\net8.0\ref\InvintionCommandTest.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvintionCommandTest\bin\Debug\net8.0\Bogus.dll

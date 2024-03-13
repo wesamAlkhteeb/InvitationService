@@ -1,6 +1,8 @@
 ﻿using Grpc.Core;
 using InvintionCommandTest.Database;
+using InvintionCommandTest.Faker;
 using InvintionCommandTest.Helper;
+using InvitationCommandService.Domain;
 using InvitationCommandTest;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit.Abstractions;
@@ -26,27 +28,14 @@ namespace InvintionCommandTest.Tests
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
-            invitationRequest.InvitationInfo = new InvitationInfoRequest()
-            {
-                AccountId = 2,
-                UserId = 2,
-                MemberId = 3,
-                SubscriptionId = 1
-            };
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 1,
-                Name = "Transfer"
-            });
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 2,
-                Name = "PurchaseCards"
-            });
+            invitationRequest.InvitationInfo = new GenerateInvitationInfoRequest().Generate();
+            invitationRequest.Permissions.Add(new GeneratePermission(1).Generate());
+            invitationRequest.Permissions.Add(new GeneratePermission(2).Generate());
+
             await client.SendInvitationToMemberAsync(invitationRequest);
-            DatabaseHelper.CheckEvent(_factory, "SendEvent", 1);
+            DatabaseHelper.CheckEvent(_factory, EventType.SendEvent.ToString(), 1);
             await client.AcceptAsync(invitationRequest.InvitationInfo);
-            DatabaseHelper.CheckEvent(_factory, "AcceptEvent", 2);
+            DatabaseHelper.CheckEvent(_factory, EventType.AcceptEvent.ToString(), 2);
 
             var response = await client.LeaveMemberAsync(invitationRequest.InvitationInfo);
             Assert.NotNull(response);
@@ -58,13 +47,8 @@ namespace InvintionCommandTest.Tests
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
 
-            InvitationInfoRequest invitationInfo = new InvitationInfoRequest()
-            {
-                AccountId = 2,
-                UserId = 2,
-                MemberId = 3,
-                SubscriptionId = 91
-            };
+            InvitationInfoRequest invitationInfo = new GenerateInvitationInfoRequest().Generate();
+
             await Assert.ThrowsAsync<RpcException>(async () =>
             {
                 await client.LeaveMemberAsync(invitationInfo);
@@ -77,25 +61,12 @@ namespace InvintionCommandTest.Tests
             Invitation.InvitationClient client = new Invitation.InvitationClient(_factory.CreateGrpcChannel());
 
             InvitationRequest invitationRequest = new InvitationRequest();
-            invitationRequest.InvitationInfo = new InvitationInfoRequest()
-            {
-                AccountId = 2,
-                UserId = 2,
-                MemberId = 3,
-                SubscriptionId = 91
-            };
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 1,
-                Name = "Transfer"
-            });
-            invitationRequest.Permissions.Add(new Permissions
-            {
-                Id = 2,
-                Name = "PurchaseCards"
-            });
+            invitationRequest.InvitationInfo = new GenerateInvitationInfoRequest().Generate();
+            invitationRequest.Permissions.Add(new GeneratePermission(1).Generate());
+            invitationRequest.Permissions.Add(new GeneratePermission(2).Generate());
+
             await client.SendInvitationToMemberAsync(invitationRequest);
-            DatabaseHelper.CheckEvent(_factory, "SendEvent", 1);
+            DatabaseHelper.CheckEvent(_factory, EventType.SendEvent.ToString(), 1);
             await Assert.ThrowsAsync<RpcException>(async () =>
             {
                 await client.LeaveMemberAsync(invitationRequest.InvitationInfo);

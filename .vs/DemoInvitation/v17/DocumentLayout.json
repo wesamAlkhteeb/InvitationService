@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D892F2E-8C43-4FEE-AA95-FA1E1495D197}|InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj|c:\\users\\wesam\\desktop\\new folder\\invitationservice\\invitationqueryservice.domain\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D892F2E-8C43-4FEE-AA95-FA1E1495D197}|InvitationQueryService.Domain\\InvitationQueryService.Domain.csproj|solutionrelative:invitationqueryservice.domain\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95B6202F-4140-48CA-B8BA-D473A2BFE9B8}|InvintionCommandTest\\InvintionCommandTest.csproj|c:\\users\\wesam\\desktop\\new folder\\invitationservice\\invintioncommandtest\\tests\\sendtesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95B6202F-4140-48CA-B8BA-D473A2BFE9B8}|InvintionCommandTest\\InvintionCommandTest.csproj|solutionrelative:invintioncommandtest\\tests\\sendtesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7054E4A8-EACC-4FBA-97B1-B63DD4F17C7E}|InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj|c:\\users\\wesam\\desktop\\new folder\\invitationservice\\invitationqueryservice.infrastructure\\servicebus\\servicebuslistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7054E4A8-EACC-4FBA-97B1-B63DD4F17C7E}|InvitationQueryService.Infrastructure\\InvitationQueryService.Infrastructure.csproj|solutionrelative:invitationqueryservice.infrastructure\\servicebus\\servicebuslistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95B6202F-4140-48CA-B8BA-D473A2BFE9B8}|InvintionCommandTest\\InvintionCommandTest.csproj|c:\\users\\wesam\\desktop\\new folder\\invitationservice\\invintioncommandtest\\tests\\removetesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95B6202F-4140-48CA-B8BA-D473A2BFE9B8}|InvintionCommandTest\\InvintionCommandTest.csproj|solutionrelative:invintioncommandtest\\tests\\removetesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\Constants.cs",
-              "RelativeDocumentMoniker": "InvitationQueryService.Domain\\Constants.cs",
-              "ToolTip": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain\\Constants.cs",
-              "RelativeToolTip": "InvitationQueryService.Domain\\Constants.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBAAAAAFAAAA",
+              "Title": "SendTesting.cs",
+              "DocumentMoniker": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\Tests\\SendTesting.cs",
+              "RelativeDocumentMoniker": "InvintionCommandTest\\Tests\\SendTesting.cs",
+              "ToolTip": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\Tests\\SendTesting.cs",
+              "RelativeToolTip": "InvintionCommandTest\\Tests\\SendTesting.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAIwGkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T11:23:00.344Z",
+              "WhenOpened": "2024-03-13T13:13:51.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ServiceBusListener.cs",
-              "DocumentMoniker": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure\\ServiceBus\\ServiceBusListener.cs",
-              "RelativeDocumentMoniker": "InvitationQueryService.Infrastructure\\ServiceBus\\ServiceBusListener.cs",
-              "ToolTip": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure\\ServiceBus\\ServiceBusListener.cs",
-              "RelativeToolTip": "InvitationQueryService.Infrastructure\\ServiceBus\\ServiceBusListener.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAA0wAEAAAAhAAAA",
+              "Title": "RemoveTesting.cs",
+              "DocumentMoniker": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\Tests\\RemoveTesting.cs",
+              "RelativeDocumentMoniker": "InvintionCommandTest\\Tests\\RemoveTesting.cs",
+              "ToolTip": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\Tests\\RemoveTesting.cs",
+              "RelativeToolTip": "InvintionCommandTest\\Tests\\RemoveTesting.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAgwCMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T11:20:59.042Z",
+              "WhenOpened": "2024-03-13T13:11:53.589Z",
               "EditorCaption": ""
             }
           ]
