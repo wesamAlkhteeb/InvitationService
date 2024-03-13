@@ -1,9 +1,9 @@
 ﻿using Grpc.Core;
 using InvitationQueryService;
-using InvitationQueryService.Application.QuerySide.CheckPermission;
 using InvitationQueryService.Domain.Entities;
+using InvitationQueryService.Models.QuerySide;
 using InvitationQueryService.Presentation.Exceptions;
-using InvitationQueryService.QuerySide.GetAllPermissions;
+
 using MediatR;
 
 namespace InvitationCommandService.Presentation.Services

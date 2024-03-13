@@ -4,6 +4,7 @@ using InvitationQueryService.Application.QuerySideServiceBus.Remove;
 using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Models;
 using InvitationQueryService.Infrastructure.Database;
+using InvitationQueryService.Models.QuerySideServiceBus;
 using InvitationQueryTest.Helper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.Testing;

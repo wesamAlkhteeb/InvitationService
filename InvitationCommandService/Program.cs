@@ -1,5 +1,5 @@
 using InvitationCommandService.Application.Abstraction;
-using InvitationCommandService.Application.CommandHandler.Send;
+using InvitationCommandService.Application.CommandHandler;
 using InvitationCommandService.Application.ServiceBus;
 using InvitationCommandService.Database;
 using InvitationCommandService.Infrastructure.Repository;

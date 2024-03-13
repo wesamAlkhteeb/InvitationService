@@ -1,7 +1,14 @@
 ﻿namespace InvitationCommandService.Domain
 {
-    //public enum Subscriptions
-    //{
-    //    send, accept, cancel, reject, join, remove, leave, changepermissions
-    //}
+    public enum EventType
+    {
+        ChangePermissionEvent, 
+        LeaveEvent,
+        RemoveEvent,
+        JoinEvent, 
+        RejectEvent, 
+        AcceptEvent,
+        CancelEvent,
+        SendEvent
+    }
 }

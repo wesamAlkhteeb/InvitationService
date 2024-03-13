@@ -10,3 +10,4 @@ C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService.Dom
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService.Domain\obj\Debug\net8.0\refint\InvitationCommandService.Domain.dll
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService.Domain\obj\Debug\net8.0\InvitationCommandService.Domain.pdb
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService.Domain\obj\Debug\net8.0\ref\InvitationCommandService.Domain.dll
+C:\Users\wesam\Desktop\New folder\InvitationService\InvitationCommandService.Domain\obj\Debug\net8.0\InvitationCommandService.Domain.csproj.AssemblyReference.cache

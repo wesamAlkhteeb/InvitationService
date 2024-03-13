@@ -1,13 +1,6 @@
 using Grpc.Core;
-using InvitationCommandService;
-using InvitationCommandService.Application.CommandHandler.Accept;
-using InvitationCommandService.Application.CommandHandler.Cancel;
-using InvitationCommandService.Application.CommandHandler.ChangePermissions;
-using InvitationCommandService.Application.CommandHandler.Join;
-using InvitationCommandService.Application.CommandHandler.Leave;
-using InvitationCommandService.Application.CommandHandler.Reject;
-using InvitationCommandService.Application.CommandHandler.Remove;
-using InvitationCommandService.Application.CommandHandler.Send;
+using InvitationCommandService.Application.CommandHandler;
+using InvitationCommandService.Domain.Model.Command;
 using InvitationCommandService.Presentation.DTOExtension;
 using MediatR;
 

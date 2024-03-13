@@ -3,27 +3,14 @@ using InvitationCommandService.Domain.StateInvitation;
 
 namespace InvitationCommandService.Domain.Domain
 {
-    public class Aggregate
+    public abstract class Aggregate
     {
         public string AggregateId { get; set; } = string.Empty;
         public int Sequence { get; set; } = 0;
         public int NextSequence => Sequence + 1;
         public List<EventEntity>? Events { get; private set; }
         public IStateInvitation? State { get; set; }
-
-        private Aggregate(IStateInvitation stateInvitation, int subscribtionId, int memberId)
-        {
-            this.State = stateInvitation;
-            GenerateAggregateId(subscribtionId, memberId);
-        }
-
-        public static Aggregate GenerateAggregate(IStateInvitation stateInvitation, int subscribtionId, int memberId)
-        {
-            Aggregate aggregate = new Aggregate(stateInvitation, subscribtionId, memberId);
-
-            return aggregate;
-        }
-
+        
         public void loadEvents(List<EventEntity> events)
         {
             Events = events;
@@ -51,7 +38,8 @@ namespace InvitationCommandService.Domain.Domain
             this.AggregateId = $"{memberId}-{subscribtionId}";
 
         }
-        public void CanDoEvent()
+        
+        protected void Check()
         {
             if (Events == null || State == null)
             {
@@ -93,6 +81,9 @@ namespace InvitationCommandService.Domain.Domain
                 }
             }
         }
+
+        public abstract void CanDoEvent();
+        
     }
 
 }

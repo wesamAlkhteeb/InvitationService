@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YVosek/vE1QmtXDXDhyz/cT7/rzpOjL7IQZWk/fz+X+Z4DnQrHEvrVB3xX39o8RZ+6vk9WUVe9jT4RcNkV3+Nw==",
+  "dgSpecHash": "gKGtperUsgHdzJar9iM0L8hdN0Kx3eBxI3sYhpoPl8oBDV/xQ02LPtg3ixRI1QBeWTkhryffLwrMlVVNrXPTNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\wesam\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\wesam\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\wesam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

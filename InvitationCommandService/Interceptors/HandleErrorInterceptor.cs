@@ -13,6 +13,10 @@ namespace InvitationCommandService.Presentation.Interceptors
             {
                 return await continuation(request, context);
             }
+            catch (RepeatPermissionException ex)
+            {
+                throw new RpcException(new Status(StatusCode.AlreadyExists, ex.Message));
+            }
             catch (OperationException ex)
             {
                 throw new RpcException(new Status(StatusCode.FailedPrecondition, ex.Message));

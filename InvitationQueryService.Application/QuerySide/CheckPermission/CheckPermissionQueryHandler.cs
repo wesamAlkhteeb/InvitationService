@@ -1,4 +1,5 @@
 ﻿using InvitationQueryService.Application.Abstractions;
+using InvitationQueryService.Models.QuerySide;
 using MediatR;
 
 namespace InvitationQueryService.Application.QuerySide.CheckPermission

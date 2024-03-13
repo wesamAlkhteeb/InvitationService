@@ -12,6 +12,7 @@ using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Exceptions;
 using InvitationQueryService.Domain.Models;
 using InvitationQueryService.Infrastructure.Database;
+using InvitationQueryService.Models.QuerySideServiceBus;
 using Microsoft.EntityFrameworkCore;
 
 namespace InvitationCommandService.Infrastructure.Repository

@@ -1,21 +1,13 @@
-﻿using InvitationQueryService.Application.QuerySideServiceBus.Join;
-using InvitationQueryService.Application.QuerySideServiceBus.Leave;
-using InvitationQueryService.Application.QuerySideServiceBus.Send;
-using InvitationQueryService.Domain;
+﻿using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Models;
 using InvitationQueryService.Infrastructure.Database;
+using InvitationQueryService.Models.QuerySideServiceBus;
 using InvitationQueryTest.Helper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Azure.Amqp.Framing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit.Abstractions;
 
 namespace InvitationQueryTest.Tests.ListenerTest

@@ -18,9 +18,9 @@ namespace InvitationCommandService.Infrastructure.Repository
         }
         public async Task<List<PermissionEntity>> GetAllPermissions(int page)
         {
-            int skip = (page - 1) * Constants.countItemInPage;
+            int skip = (page - 1) * Constants.COUNT_ITEM_IN_PAGE;
             return await database.Permissions
-                .Skip(skip).Take(Constants.countItemInPage)
+                .Skip(skip).Take(Constants.COUNT_ITEM_IN_PAGE)
                 .ToListAsync();
         }
 

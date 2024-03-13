@@ -1,13 +1,6 @@
 ﻿using Azure.Messaging.ServiceBus;
-using InvitationQueryService.Application.QuerySideServiceBus.Accept;
-using InvitationQueryService.Application.QuerySideServiceBus.Cancel;
-using InvitationQueryService.Application.QuerySideServiceBus.ChangePermission;
-using InvitationQueryService.Application.QuerySideServiceBus.Join;
-using InvitationQueryService.Application.QuerySideServiceBus.Leave;
-using InvitationQueryService.Application.QuerySideServiceBus.Reject;
-using InvitationQueryService.Application.QuerySideServiceBus.Remove;
-using InvitationQueryService.Application.QuerySideServiceBus.Send;
 using InvitationQueryService.Infrastructure.ServiceBus;
+using InvitationQueryService.Models.QuerySideServiceBus;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

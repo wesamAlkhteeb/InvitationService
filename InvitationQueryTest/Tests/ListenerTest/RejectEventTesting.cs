@@ -1,11 +1,7 @@
-﻿using InvitationQueryService.Application.QuerySideServiceBus.Join;
-using InvitationQueryService.Application.QuerySideServiceBus.Leave;
-using InvitationQueryService.Application.QuerySideServiceBus.Reject;
-using InvitationQueryService.Application.QuerySideServiceBus.Send;
-using InvitationQueryService.Domain;
-using InvitationQueryService.Domain.Entities;
+﻿using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Models;
 using InvitationQueryService.Infrastructure.Database;
+using InvitationQueryService.Models.QuerySideServiceBus;
 using InvitationQueryTest.Helper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.Testing;

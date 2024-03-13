@@ -1,7 +1,6 @@
-﻿using InvitationQueryService.Application.QuerySideServiceBus.ChangePermission;
-using InvitationQueryService.Application.QuerySideServiceBus.Join;
-using InvitationQueryService.Application.QuerySideServiceBus.Send;
+﻿
 using InvitationQueryService.Domain.Entities;
+using InvitationQueryService.Models.QuerySideServiceBus;
 
 namespace InvitationQueryService.Application.Abstractions
 {

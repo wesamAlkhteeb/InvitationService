@@ -3,6 +3,7 @@ using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using InvitationQueryService.Models.QuerySideServiceBus;
 
 namespace InvitationQueryService.Application.QuerySideServiceBus.Reject
 {

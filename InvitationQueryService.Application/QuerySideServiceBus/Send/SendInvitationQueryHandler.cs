@@ -1,8 +1,8 @@
 ﻿using InvitationQueryService.Application.Abstractions;
 using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Entities;
+using InvitationQueryService.Models.QuerySideServiceBus;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace InvitationQueryService.Application.QuerySideServiceBus.Send
 {

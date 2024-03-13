@@ -1,6 +1,7 @@
 ﻿using InvitationQueryService.Application.Abstractions;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Models.Response;
+using InvitationQueryService.Models.QuerySide;
 using MediatR;
 
 namespace InvitationQueryService.QuerySide.GetAllSubscriptor

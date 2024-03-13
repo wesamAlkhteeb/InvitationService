@@ -18,16 +18,16 @@ namespace InvitationCommandService.Infrastructure.Repository
 
         public async Task<List<SubscriptionsEntity>> GetSubscriptionForOwner(int page, int ownerId)
         {
-            int skip = (page - 1) * Constants.countItemInPage;
+            int skip = (page - 1) * Constants.COUNT_ITEM_IN_PAGE;
             return await database.Subscriptions
                 .Where(x=>x.AccountId == ownerId)
-                .Skip(skip).Take(Constants.countItemInPage)
+                .Skip(skip).Take(Constants.COUNT_ITEM_IN_PAGE)
                 .ToListAsync();
         }
 
         public async Task<List<SubscriptionsEntity>> GetSubscriptionForUser(int page, int userId)
         {
-            int skip = (page - 1) * Constants.countItemInPage;
+            int skip = (page - 1) * Constants.COUNT_ITEM_IN_PAGE;
             return await database.Subscriptors
                     .Where( x => x.SubscriptorAccountId == userId )
                     .Join(
@@ -40,10 +40,10 @@ namespace InvitationCommandService.Infrastructure.Repository
 
         public async Task<List<UsersInSubscriptionResponseModel>> GetUserinSubscription(int page, int subscriptionId)
         {
-            int skip = (page - 1) * Constants.countItemInPage;
+            int skip = (page - 1) * Constants.COUNT_ITEM_IN_PAGE;
             return await database.Subscriptors
                 .Where(x => x.SubscriptionId == subscriptionId)
-                .Skip(skip).Take(Constants.countItemInPage)
+                .Skip(skip).Take(Constants.COUNT_ITEM_IN_PAGE)
                 .Select(x=> new UsersInSubscriptionResponseModel
                 {
                     Id = x.Id,

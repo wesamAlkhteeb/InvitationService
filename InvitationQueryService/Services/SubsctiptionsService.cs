@@ -2,10 +2,8 @@
 using InvitationQueryService;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Domain.Models.Response;
+using InvitationQueryService.Models.QuerySide;
 using InvitationQueryService.Presentation.Exceptions;
-using InvitationQueryService.QuerySide.GetAllSubscriptionForOwner;
-using InvitationQueryService.QuerySide.GetAllSubscriptionForSubscriptor;
-using InvitationQueryService.QuerySide.GetAllSubscriptor;
 using MediatR;
 
 namespace InvitationCommandService.Presentation.Services
