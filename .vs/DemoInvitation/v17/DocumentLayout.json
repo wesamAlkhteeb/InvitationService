@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}|InvitationQueryTest\\InvitationQueryTest.csproj|d:\\projects\\company\\ecom\\training project\\invitationservice\\invitationquerytest\\tests\\subscriptiontesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}|InvitationQueryTest\\InvitationQueryTest.csproj|solutionrelative:invitationquerytest\\tests\\subscriptiontesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}|InvitationQueryTest\\InvitationQueryTest.csproj|d:\\projects\\company\\ecom\\training project\\invitationservice\\invitationquerytest\\tests\\permissiontesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}|InvitationQueryTest\\InvitationQueryTest.csproj|solutionrelative:invitationquerytest\\tests\\permissiontesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D61BBEB5-79FE-4E3F-83E9-63A6CC1F478E}|InvitationQueryTest\\InvitationQueryTest.csproj|d:\\projects\\company\\ecom\\training project\\invitationservice\\invitationquerytest\\faker\\generateusersubscriptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -32,22 +32,22 @@
               "RelativeDocumentMoniker": "InvitationQueryTest\\Faker\\GenerateUserSubscriptor.cs",
               "ToolTip": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\Faker\\GenerateUserSubscriptor.cs",
               "RelativeToolTip": "InvitationQueryTest\\Faker\\GenerateUserSubscriptor.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAuwBwAAAAJAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAuwBgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T11:23:31.893Z",
+              "WhenOpened": "2024-03-19T11:40:48.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SubscriptionTesting.cs",
-              "DocumentMoniker": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\Tests\\SubscriptionTesting.cs",
-              "RelativeDocumentMoniker": "InvitationQueryTest\\Tests\\SubscriptionTesting.cs",
-              "ToolTip": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\Tests\\SubscriptionTesting.cs",
-              "RelativeToolTip": "InvitationQueryTest\\Tests\\SubscriptionTesting.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAkwHUAAAAQAAAA",
+              "Title": "PermissionTesting.cs",
+              "DocumentMoniker": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\Tests\\PermissionTesting.cs",
+              "RelativeDocumentMoniker": "InvitationQueryTest\\Tests\\PermissionTesting.cs",
+              "ToolTip": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\Tests\\PermissionTesting.cs",
+              "RelativeToolTip": "InvitationQueryTest\\Tests\\PermissionTesting.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAkwDsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T10:52:31.465Z",
+              "WhenOpened": "2024-03-19T11:37:34.997Z",
               "EditorCaption": ""
             }
           ]

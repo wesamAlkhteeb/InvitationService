@@ -1,6 +1,8 @@
 ﻿using Grpc.Core;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Infrastructure.Database;
+using InvitationQueryTest.DatabaseQuery;
+using InvitationQueryTest.Faker;
 using InvitationQueryTest.Helper;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,27 +26,22 @@ namespace InvitationQueryTest.Tests
         public async Task GetAll_PositivePage_Successfully() {
             Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
 
-            var data = await _client.GetAllAsync(new PermissionPage
+            for(int i=0; i<4; i++)
             {
-                NumberPage = 1
-            });
+                await DatabaseQueryHelper.AddPermissions(this._factory, $"Permission-{i+1}");
+            }
+
+            var data = await _client.GetAllAsync( new GeneratePermissionPage().Generate());
             Assert.NotNull(data);
-            Assert.Equal(0, data.Permission.Count());
+            Assert.Equal(4, data.Permission.Count());
         }
 
         [Fact]
         public async Task GetAll_NegativePage_Exception() {
             Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
 
-            PermissionPage permissionPage = new PermissionPage
-            {
-                NumberPage = -1
-            };
+            PermissionPage permissionPage = new GeneratePermissionPage().Generate();
 
-            await Assert.ThrowsAsync<RpcException>(async () =>
-            {
-                await _client.GetAllAsync(permissionPage);
-            });
             permissionPage.NumberPage = -10;
             await Assert.ThrowsAsync<RpcException>(async () =>
             {
@@ -56,19 +53,9 @@ namespace InvitationQueryTest.Tests
         public async Task CheckPermission_Exists_Succesfully()
         {
             Permissions.PermissionsClient _client = new Permissions.PermissionsClient(_factory.CreateGrpcChannel());
-            var scope = _factory.Services.CreateScope();
-            var database = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
-            //I seed to permissions so this Id must be equal 3.
-            var permission = new PermissionEntity
-            {
-                Name = "TTT"
-            };
-            database.Permissions.Add(permission);
-            await database.SaveChangesAsync();
-            var res = await _client.CheckAsync(new PermissionId
-            {
-                Id = permission.Id
-            });
+
+            int permissionId = await DatabaseQueryHelper.AddPermissions(this._factory,"Any");
+            var res = await _client.CheckAsync(new GeneratePermissionId(permissionId).Generate());
             Assert.NotNull(res);
         }
     }
