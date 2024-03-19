@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj": {}
+    "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj": {
+    "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj",
         "projectName": "InvitationCommandService.Domain",
-        "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj",
+        "projectPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationCommandService.Domain\\InvitationCommandService.Domain.csproj",
         "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService.Domain\\obj\\",
+        "outputPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationCommandService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

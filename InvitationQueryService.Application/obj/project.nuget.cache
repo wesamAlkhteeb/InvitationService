@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DuZsqOLOVMr718R0Uk7BN7x7P4JioNpMv2KFAgAv/ujg6SUqV1hEvnpV7tzg3F5LDw9suKzVUgiJo1qE2O8qnA==",
+  "dgSpecHash": "jxPz5wGS7uThDS5TR5DbOmshYR05N/LQydpEJA4dzGsSk58J4mKSBrqmfLRVYEYgPiee5uCc5tRPvrotrVZgzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj",
+  "projectFilePath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryService.Application\\InvitationQueryService.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wesam\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

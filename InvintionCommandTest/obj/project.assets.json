@@ -5857,11 +5857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\InvintionCommandTest.csproj",
+      "projectUniqueName": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvintionCommandTest\\InvintionCommandTest.csproj",
       "projectName": "InvintionCommandTest",
-      "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\InvintionCommandTest.csproj",
+      "projectPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvintionCommandTest\\InvintionCommandTest.csproj",
       "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvintionCommandTest\\obj\\",
+      "outputPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvintionCommandTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5882,8 +5882,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService\\InvitationCommandService.Presentation.csproj": {
-              "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationCommandService\\InvitationCommandService.Presentation.csproj"
+            "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationCommandService\\InvitationCommandService.Presentation.csproj": {
+              "projectPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationCommandService\\InvitationCommandService.Presentation.csproj"
             }
           }
         }

@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "GGNY8XOIrz3FnF1YcW8SXpHj6I3sAHcxBtSxleP2Sww0rOWiSuPBm5XknYoJxK4XoSQtYWdClVF+vsO7A2/VmA==",
+  "dgSpecHash": "GYbq6lTvOxk/JOBd698lW67KDijpdTLYuxBKSI8NBGBemsIebX98fe3C2cOAJPrlkHTTyvotUYUMFaEDWRyl2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryTest\\InvitationQueryTest.csproj",
+  "projectFilePath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\InvitationQueryTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wesam\\.nuget\\packages\\azure.core\\1.37.0\\azure.core.1.37.0.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\azure.core.amqp\\1.3.0\\azure.core.amqp.1.3.0.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\azure.messaging.servicebus\\7.17.3\\azure.messaging.servicebus.7.17.3.nupkg.sha512",
+    "C:\\Users\\wesam\\.nuget\\packages\\bogus\\35.5.0\\bogus.35.5.0.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\coverlet.collector\\6.0.1\\coverlet.collector.6.0.1.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\google.protobuf\\3.24.0\\google.protobuf.3.24.0.nupkg.sha512",
     "C:\\Users\\wesam\\.nuget\\packages\\grpc.aspnetcore\\2.61.0\\grpc.aspnetcore.2.61.0.nupkg.sha512",

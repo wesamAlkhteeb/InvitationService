@@ -1,6 +1,6 @@
 {
-  "InvitationQueryService.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Application",
-  "InvitationQueryService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Domain",
-  "InvitationQueryService.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService.Infrastructure",
-  "InvitationQueryService.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService"
+  "InvitationQueryService.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryService.Application",
+  "InvitationQueryService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryService.Domain",
+  "InvitationQueryService.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryService.Infrastructure",
+  "InvitationQueryService.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryService"
 }

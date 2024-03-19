@@ -2,6 +2,8 @@
 using InvitationQueryService.Domain;
 using InvitationQueryService.Domain.Entities;
 using InvitationQueryService.Infrastructure.Database;
+using InvitationQueryTest.DatabaseQuery;
+using InvitationQueryTest.Faker;
 using InvitationQueryTest.Helper;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,29 +48,13 @@ namespace InvitationQueryTest.Tests
         public async Task GetAllSubscriptorInSubscription_PositivePage_Successfully() {
             Subscriptions.SubscriptionsClient _client = new Subscriptions.SubscriptionsClient(_factory.CreateGrpcChannel());
 
-            var scope = this._factory.Services.CreateScope();
-            var database = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
-            database.Subscriptions.Add(new SubscriptionsEntity
+            int memberId = 200 , accountId=400;
+            int subscriptionId = await DatabaseQueryHelper.AddSubscription(this._factory,accountId);            
+            for (int i = 0; i < 4; i++)
             {
-                AccountId = 400,
-                Type = SubscriptionType.A.ToString()
-            });
-            for(int i=0; i<4; i++)
-            {
-                database.Subscriptors.Add(new SubscriptorEntity
-                {
-                    Sequence = 1,
-                    Status = InvitationState.Joined.ToString(),
-                    SubscriptionId = 2,
-                    SubscriptorAccountId = i+1
-                });
+                await DatabaseQueryHelper.AddSubscriptor(this._factory,i+1,subscriptionId,memberId);
             }
-            database.SaveChanges();
-            UserSubscriptor page = new UserSubscriptor
-            {
-                Page = 1,
-                SubscriptionId = 2
-            };
+            UserSubscriptor page = new GenerateUserSubscriptor(subscriptionId).Generate();
             var data = await _client.GetAllSubscriptorInSubscriptionAsync(page);
             Assert.NotNull(data);
             Assert.Equal(4, data.UserSubscriptionReuslt.Count());
@@ -78,15 +64,9 @@ namespace InvitationQueryTest.Tests
         public async Task GetAllSubscriptionForSubscriptor_NegativePage_Exception() {
             Subscriptions.SubscriptionsClient _client = new Subscriptions.SubscriptionsClient(_factory.CreateGrpcChannel());
 
-            UserSubscription page = new UserSubscription
-            {
-                Page = 0,
-                UserId = 1
-            };
-            await Assert.ThrowsAsync<RpcException>(async () =>
-            {
-                await _client.GetAllSubscriptionForSubscriptorAsync(page);
-            });
+            int memberId = 2;
+            UserSubscription page = new GenerateUserSubscription(memberId).Generate();
+
             page.Page = -1;
             await Assert.ThrowsAsync<RpcException>(async () =>
             {
@@ -97,35 +77,15 @@ namespace InvitationQueryTest.Tests
         [Fact]
         public async Task GetAllSubscriptionForSubscriptor_PositivePage_Successfully() {
             Subscriptions.SubscriptionsClient _client = new Subscriptions.SubscriptionsClient(_factory.CreateGrpcChannel());
-
-            UserSubscription page = new UserSubscription
+            
+            int accountId = 3, memberId = 2;
+            for(int i=0; i<4; i++)
             {
-                Page = 1,
-                UserId = 200
-            };
-
-            var scope = _factory.Services.CreateScope();
-            var database = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
-            for (int i = 0; i < 4; i++)
-            {
-                var subscription = new SubscriptionsEntity
-                {
-                    AccountId = 300,
-                    Type = SubscriptionType.A.ToString()
-                };
-                database.Subscriptions.Add(subscription);
+                int subscriptionId = await DatabaseQueryHelper.AddSubscription(this._factory, accountId);
+                await DatabaseQueryHelper.AddSubscriptor(this._factory, i + 1, subscriptionId, memberId);
             }
-            for(int i=1; i<=5; i++)
-            {
-                database.Subscriptors.Add(new SubscriptorEntity
-                {
-                    Sequence = i,
-                    Status = InvitationState.Joined.ToString(),
-                    SubscriptionId = i,
-                    SubscriptorAccountId = 200
-                });
-            }
-            database.SaveChanges();
+
+            UserSubscription page = new GenerateUserSubscription(memberId).Generate();
             var data = await _client.GetAllSubscriptionForSubscriptorAsync(page);
             
             Assert.NotNull(data);
@@ -136,15 +96,9 @@ namespace InvitationQueryTest.Tests
         public async Task GetAllSubscriptionForOwner_NegativePage_Exception() {
             Subscriptions.SubscriptionsClient _client = new Subscriptions.SubscriptionsClient(_factory.CreateGrpcChannel());
 
-            OwnerSubscription page = new OwnerSubscription
-            {
-                Page = 0,
-                OwnerId = 10
-            };
-            await Assert.ThrowsAsync<RpcException>(async () =>
-            {
-                await _client.GetAllSubscriptionForOwnerAsync(page);
-            });
+            int ownerId = 10;
+            OwnerSubscription page = new GenerateOwnerSubscription(ownerId);
+            
             page.Page = -1;
             await Assert.ThrowsAsync<RpcException>(async () =>
             {
@@ -154,23 +108,14 @@ namespace InvitationQueryTest.Tests
         [Fact]
         public async Task GetAllSubscriptionForOwner_PositivePage_Successfully() {
             Subscriptions.SubscriptionsClient _client = new Subscriptions.SubscriptionsClient(_factory.CreateGrpcChannel());
-            OwnerSubscription page = new OwnerSubscription
-            {
-                Page = 1,
-                OwnerId = 300
-            };
 
-            var scope = _factory.Services.CreateScope();
-            var database = scope.ServiceProvider.GetRequiredService<InvitationDbContext>();
-            for(int i=0; i<4; i++)
+            int ownerId = 300;
+            OwnerSubscription page = new GenerateOwnerSubscription(ownerId);
+
+            for (int i = 0; i < 4; i++)
             {
-                database.Subscriptions.Add(new SubscriptionsEntity
-                {
-                    AccountId = 300,
-                    Type = SubscriptionType.A.ToString()
-                });
+                await DatabaseQueryHelper.AddSubscription(this._factory, ownerId);
             }
-            database.SaveChanges();
 
             var data = await _client.GetAllSubscriptionForOwnerAsync(page);
             Assert.NotNull(data);

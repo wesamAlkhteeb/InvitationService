@@ -84,6 +84,19 @@
           }
         }
       },
+      "Bogus/35.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Bogus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "coverlet.collector/6.0.1": {
         "type": "package",
         "build": {
@@ -2519,6 +2532,25 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll",
         "lib/netstandard2.0/Azure.Messaging.ServiceBus.xml"
+      ]
+    },
+    "Bogus/35.5.0": {
+      "sha512": "iCXszbIvvxgfb01bPe/s3R6pQSKX6rpcQWqM7wqDt+lsMogR6fkSWBwqOxLpdXmMB7mgZNNk2hm2M1shoIiekA==",
+      "type": "package",
+      "path": "bogus/35.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bogus.35.5.0.nupkg.sha512",
+        "bogus.nuspec",
+        "lib/net40/Bogus.dll",
+        "lib/net40/Bogus.xml",
+        "lib/net6.0/Bogus.dll",
+        "lib/net6.0/Bogus.xml",
+        "lib/netstandard1.3/Bogus.dll",
+        "lib/netstandard1.3/Bogus.xml",
+        "lib/netstandard2.0/Bogus.dll",
+        "lib/netstandard2.0/Bogus.xml"
       ]
     },
     "coverlet.collector/6.0.1": {
@@ -6184,6 +6216,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Bogus >= 35.5.0",
       "Grpc.AspNetCore >= 2.61.0",
       "InvitationQueryService.Presentation >= 1.0.0",
       "MediatR >= 12.2.0",
@@ -6202,11 +6235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryTest\\InvitationQueryTest.csproj",
+      "projectUniqueName": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\InvitationQueryTest.csproj",
       "projectName": "InvitationQueryTest",
-      "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryTest\\InvitationQueryTest.csproj",
+      "projectPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\InvitationQueryTest.csproj",
       "packagesPath": "C:\\Users\\wesam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryTest\\obj\\",
+      "outputPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6227,8 +6260,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService\\InvitationQueryService.Presentation.csproj": {
-              "projectPath": "C:\\Users\\wesam\\Desktop\\New folder\\InvitationService\\InvitationQueryService\\InvitationQueryService.Presentation.csproj"
+            "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryService\\InvitationQueryService.Presentation.csproj": {
+              "projectPath": "D:\\Projects\\Company\\Ecom\\Training Project\\InvitationService\\InvitationQueryService\\InvitationQueryService.Presentation.csproj"
             }
           }
         }
@@ -6248,6 +6281,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Bogus": {
+            "target": "Package",
+            "version": "[35.5.0, )"
+          },
           "Grpc.AspNetCore": {
             "target": "Package",
             "version": "[2.61.0, )"

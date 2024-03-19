@@ -11,3 +11,16 @@ C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryService.Domai
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\refint\InvitationQueryService.Domain.dll
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.pdb
 C:\Users\wesam\Desktop\New folder\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\ref\InvitationQueryService.Domain.dll
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\bin\Debug\net8.0\InvitationQueryService.Domain.deps.json
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\bin\Debug\net8.0\InvitationQueryService.Domain.dll
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\bin\Debug\net8.0\InvitationQueryService.Domain.pdb
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.csproj.AssemblyReference.cache
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.AssemblyInfoInputs.cache
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.AssemblyInfo.cs
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.sourcelink.json
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.dll
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\refint\InvitationQueryService.Domain.dll
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\InvitationQueryService.Domain.pdb
+D:\Projects\Company\Ecom\Training Project\InvitationService\InvitationQueryService.Domain\obj\Debug\net8.0\ref\InvitationQueryService.Domain.dll
